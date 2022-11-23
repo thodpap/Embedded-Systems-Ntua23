@@ -1,750 +1,750 @@
 for Bx = 1, By = 1
-   mean time = 5608.8
-   max time = 7279
-   min time = 5110
+   mean time = 4842.64
+   max time = 9019
+   min time = 3139
 
 for Bx = 1, By = 2
-   mean time = 3600.266666666667
-   max time = 4009
-   min time = 3344
+   mean time = 2395.8
+   max time = 2551
+   min time = 2342
 
 for Bx = 1, By = 4
-   mean time = 2772.3
-   max time = 3851
-   min time = 2555
+   mean time = 1759.64
+   max time = 1856
+   min time = 1736
 
 for Bx = 1, By = 8
-   mean time = 2347.4666666666667
-   max time = 3301
-   min time = 2160
+   mean time = 1491.22
+   max time = 2030
+   min time = 1276
 
 for Bx = 1, By = 11
-   mean time = 2185.3
-   max time = 2585
-   min time = 2050
+   mean time = 1402.9795918367347
+   max time = 1617
+   min time = 1266
 
 for Bx = 1, By = 16
-   mean time = 2157.4
-   max time = 3180
-   min time = 1994
+   mean time = 1342.06
+   max time = 1560
+   min time = 1301
 
 for Bx = 1, By = 22
-   mean time = 2094.5
-   max time = 2640
-   min time = 1927
+   mean time = 1298.14
+   max time = 1444
+   min time = 1275
 
 for Bx = 1, By = 44
-   mean time = 2092.5
-   max time = 4299
-   min time = 1862
+   mean time = 1263.94
+   max time = 1497
+   min time = 1230
 
 for Bx = 1, By = 88
-   mean time = 1954.6333333333334
-   max time = 2600
-   min time = 1807
+   mean time = 1222.96
+   max time = 1328
+   min time = 1206
 
 for Bx = 1, By = 176
-   mean time = 1932.0333333333333
-   max time = 2601
-   min time = 1787
+   mean time = 1199.64
+   max time = 1292
+   min time = 1184
 
 for Bx = 2, By = 1
-   mean time = 4096.133333333333
-   max time = 4705
-   min time = 3811
+   mean time = 2582.86
+   max time = 2930
+   min time = 2293
 
 for Bx = 2, By = 2
-   mean time = 2988.766666666667
-   max time = 4745
-   min time = 2739
+   mean time = 1917.14
+   max time = 2097
+   min time = 1663
 
 for Bx = 2, By = 4
-   mean time = 2462.4333333333334
-   max time = 3106
-   min time = 2277
+   mean time = 1563.34
+   max time = 1746
+   min time = 1439
 
 for Bx = 2, By = 8
-   mean time = 2179.9666666666667
-   max time = 2655
-   min time = 2037
+   mean time = 1364.42
+   max time = 1450
+   min time = 1344
 
 for Bx = 2, By = 11
-   mean time = 2109.0
-   max time = 2642
-   min time = 1968
+   mean time = 1357.52
+   max time = 2117
+   min time = 1303
 
 for Bx = 2, By = 16
-   mean time = 2099.8333333333335
-   max time = 3793
-   min time = 1865
+   mean time = 1301.8
+   max time = 1602
+   min time = 1275
 
 for Bx = 2, By = 22
-   mean time = 2063.5333333333333
-   max time = 3762
-   min time = 1868
+   mean time = 1268.24
+   max time = 1394
+   min time = 1245
 
 for Bx = 2, By = 44
-   mean time = -31331.233333333334
-   max time = 2301
-   min time = -998112
+   mean time = 1229.16
+   max time = 1365
+   min time = 1066
 
 for Bx = 2, By = 88
-   mean time = 2027.1333333333334
-   max time = 2896
-   min time = 1827
+   mean time = 1220.68
+   max time = 1348
+   min time = 1072
 
 for Bx = 2, By = 176
-   mean time = 1988.3333333333333
-   max time = 3297
-   min time = 1765
+   mean time = 1196.56
+   max time = 1499
+   min time = 1057
 
 for Bx = 3, By = 1
-   mean time = 3625.766666666667
-   max time = 4059
-   min time = 3343
+   mean time = 2320.2244897959185
+   max time = 2554
+   min time = 2096
 
 for Bx = 3, By = 2
-   mean time = 2743.1
-   max time = 3166
-   min time = 2572
+   mean time = 1764.48
+   max time = 2519
+   min time = 1635
 
 for Bx = 3, By = 4
-   mean time = 2411.5333333333333
-   max time = 3622
-   min time = 2184
+   mean time = 1499.42
+   max time = 2078
+   min time = 1453
 
 for Bx = 3, By = 8
-   mean time = 2071.9333333333334
-   max time = 2533
-   min time = 1922
+   mean time = 1337.76
+   max time = 1533
+   min time = 1154
 
 for Bx = 3, By = 11
-   mean time = -31267.9
-   max time = 2520
-   min time = -997888
+   mean time = 1321.28
+   max time = 1937
+   min time = 1275
 
 for Bx = 3, By = 16
-   mean time = 2036.4
-   max time = 2716
-   min time = 1867
+   mean time = 1278.48
+   max time = 1439
+   min time = 1107
 
 for Bx = 3, By = 22
-   mean time = 2046.5
-   max time = 3526
-   min time = 1876
+   mean time = 1278.88
+   max time = 1666
+   min time = 1234
 
 for Bx = 3, By = 44
-   mean time = 2066.0666666666666
-   max time = 2632
-   min time = 1873
+   mean time = 1232.4
+   max time = 1536
+   min time = 1102
 
 for Bx = 3, By = 88
-   mean time = 2215.1
-   max time = 3588
-   min time = 1844
+   mean time = 1227.12
+   max time = 1781
+   min time = 1125
 
 for Bx = 3, By = 176
-   mean time = 2022.8
-   max time = 3360
-   min time = 1791
+   mean time = 1189.58
+   max time = 1336
+   min time = 1035
 
 for Bx = 4, By = 1
-   mean time = 3517.5
-   max time = 5313
-   min time = 3173
+   mean time = 2163.38
+   max time = 2483
+   min time = 2030
 
 for Bx = 4, By = 2
-   mean time = 2679.1
-   max time = 3232
-   min time = 2466
+   mean time = 1692.44
+   max time = 1879
+   min time = 1646
 
 for Bx = 4, By = 4
-   mean time = 2294.866666666667
-   max time = 3230
-   min time = 2138
+   mean time = 1459.4
+   max time = 2005
+   min time = 1426
 
 for Bx = 4, By = 8
-   mean time = 2063.5666666666666
-   max time = 2394
-   min time = 1906
+   mean time = 1330.54
+   max time = 1399
+   min time = 1312
 
 for Bx = 4, By = 11
-   mean time = 2063.9666666666667
-   max time = 2580
-   min time = 1927
+   mean time = 1312.1
+   max time = 1708
+   min time = 1274
 
 for Bx = 4, By = 16
-   mean time = 1985.2333333333333
-   max time = 2233
-   min time = 1871
+   mean time = 1267.36
+   max time = 1360
+   min time = 1213
 
 for Bx = 4, By = 22
-   mean time = 1960.3666666666666
-   max time = 2391
-   min time = 1835
+   mean time = 1282.28
+   max time = 1683
+   min time = 1241
 
 for Bx = 4, By = 44
-   mean time = 2041.0
-   max time = 3104
-   min time = 1841
+   mean time = 1230.68
+   max time = 1644
+   min time = 1054
 
 for Bx = 4, By = 88
-   mean time = 1965.9
-   max time = 2662
-   min time = 1814
+   mean time = 1234.3
+   max time = 1699
+   min time = 1201
 
 for Bx = 4, By = 176
-   mean time = 1911.0666666666666
-   max time = 2366
-   min time = 1796
+   mean time = 1210.0
+   max time = 1479
+   min time = 1185
 
 for Bx = 6, By = 1
-   mean time = 3312.633333333333
-   max time = 4975
-   min time = 3012
+   mean time = 2086.06
+   max time = 3128
+   min time = 1952
 
 for Bx = 6, By = 2
-   mean time = 2578.6
-   max time = 3217
-   min time = 2393
+   mean time = 1632.92
+   max time = 2034
+   min time = 1442
 
 for Bx = 6, By = 4
-   mean time = 2293.0
-   max time = 3738
-   min time = 2034
+   mean time = 1440.9183673469388
+   max time = 1600
+   min time = 1302
 
 for Bx = 6, By = 8
-   mean time = 2118.0666666666666
-   max time = 3097
-   min time = 1940
+   mean time = 1328.52
+   max time = 1807
+   min time = 1289
 
 for Bx = 6, By = 11
-   mean time = 2058.4333333333334
-   max time = 2580
-   min time = 1866
+   mean time = 1279.58
+   max time = 1408
+   min time = 1260
 
 for Bx = 6, By = 16
-   mean time = 1940.0666666666666
-   max time = 2207
-   min time = 1791
+   mean time = 1259.9
+   max time = 1383
+   min time = 1242
 
 for Bx = 6, By = 22
-   mean time = 1930.4666666666667
-   max time = 2161
-   min time = 1815
+   mean time = 1237.94
+   max time = 1396
+   min time = 1066
 
 for Bx = 6, By = 44
-   mean time = -31356.366666666665
-   max time = 2515
-   min time = -997468
+   mean time = 1221.94
+   max time = 1646
+   min time = 1196
 
 for Bx = 6, By = 88
-   mean time = 1973.7333333333333
-   max time = 2662
-   min time = 1803
+   mean time = 1213.86
+   max time = 1656
+   min time = 1070
 
 for Bx = 6, By = 176
-   mean time = 1941.2
-   max time = 2533
-   min time = 1743
+   mean time = 1219.72
+   max time = 1740
+   min time = 1184
 
 for Bx = 8, By = 1
-   mean time = 3286.633333333333
-   max time = 5102
-   min time = 2916
+   mean time = 1936.9
+   max time = 2269
+   min time = 1872
 
 for Bx = 8, By = 2
-   mean time = 2510.3333333333335
-   max time = 3139
-   min time = 2323
+   mean time = 1579.9
+   max time = 1955
+   min time = 1361
 
 for Bx = 8, By = 4
-   mean time = 2262.1666666666665
-   max time = 2577
-   min time = 2099
+   mean time = 1411.32
+   max time = 1837
+   min time = 1385
 
 for Bx = 8, By = 8
-   mean time = 2048.3333333333335
-   max time = 2385
-   min time = 1914
+   mean time = 1334.44
+   max time = 1840
+   min time = 1310
 
 for Bx = 8, By = 11
-   mean time = 2060.0666666666666
-   max time = 3595
-   min time = 1832
+   mean time = 1276.18
+   max time = 1452
+   min time = 1196
 
 for Bx = 8, By = 16
-   mean time = 2062.7
-   max time = 3756
-   min time = 1845
+   mean time = 1239.14
+   max time = 1428
+   min time = 1082
 
 for Bx = 8, By = 22
-   mean time = 1951.4
-   max time = 2669
-   min time = 1809
+   mean time = 1224.26
+   max time = 1292
+   min time = 1065
 
 for Bx = 8, By = 44
-   mean time = 1975.2333333333333
-   max time = 2806
-   min time = 1823
+   mean time = 1209.34
+   max time = 1263
+   min time = 1193
 
 for Bx = 8, By = 88
-   mean time = 1985.4666666666667
-   max time = 2611
-   min time = 1792
+   mean time = 1218.0
+   max time = 1595
+   min time = 1079
 
 for Bx = 8, By = 176
-   mean time = 1948.3
-   max time = 2389
-   min time = 1800
+   mean time = 1202.6
+   max time = 1738
+   min time = 1184
 
 for Bx = 9, By = 1
-   mean time = 3240.366666666667
-   max time = 5125
-   min time = 2827
+   mean time = 1931.84
+   max time = 2372
+   min time = 1738
 
 for Bx = 9, By = 2
-   mean time = 2491.266666666667
-   max time = 2839
-   min time = 2318
+   mean time = 1555.08
+   max time = 1998
+   min time = 1351
 
 for Bx = 9, By = 4
-   mean time = 2265.133333333333
-   max time = 3050
-   min time = 2075
+   mean time = 1393.02
+   max time = 1517
+   min time = 1223
 
 for Bx = 9, By = 8
-   mean time = 2573.6
-   max time = 3865
-   min time = 1951
+   mean time = 1310.86
+   max time = 1650
+   min time = 1233
 
 for Bx = 9, By = 11
-   mean time = 2361.5
-   max time = 3620
-   min time = 1866
+   mean time = 1270.1
+   max time = 1326
+   min time = 1257
 
 for Bx = 9, By = 16
-   mean time = 2094.633333333333
-   max time = 3517
-   min time = 1831
+   mean time = 1242.1
+   max time = 1319
+   min time = 1232
 
 for Bx = 9, By = 22
-   mean time = 2064.4666666666667
-   max time = 4049
-   min time = 1805
+   mean time = 1226.1
+   max time = 1303
+   min time = 1213
 
 for Bx = 9, By = 44
-   mean time = 2003.1333333333334
-   max time = 3044
-   min time = 1819
+   mean time = 1199.58
+   max time = 1338
+   min time = 1044
 
 for Bx = 9, By = 88
-   mean time = 1953.6333333333334
-   max time = 2214
-   min time = 1813
+   mean time = 1202.26
+   max time = 1260
+   min time = 1048
 
 for Bx = 9, By = 176
-   mean time = -31369.333333333332
-   max time = 2357
-   min time = -998247
+   mean time = 1199.74
+   max time = 1407
+   min time = 1182
 
 for Bx = 12, By = 1
-   mean time = 3218.6666666666665
-   max time = 4790
-   min time = 2957
+   mean time = 1882.3
+   max time = 2383
+   min time = 1652
 
 for Bx = 12, By = 2
-   mean time = 2561.3
-   max time = 3605
-   min time = 2302
+   mean time = 1564.48
+   max time = 1984
+   min time = 1520
 
 for Bx = 12, By = 4
-   mean time = 2221.8333333333335
-   max time = 3030
-   min time = 2054
+   mean time = 1379.0
+   max time = 1488
+   min time = 1217
 
 for Bx = 12, By = 8
-   mean time = 2138.6666666666665
-   max time = 3618
-   min time = 1893
+   mean time = 1296.92
+   max time = 1428
+   min time = 1278
 
 for Bx = 12, By = 11
-   mean time = 2225.0333333333333
-   max time = 3041
-   min time = 1863
+   mean time = 1265.98
+   max time = 1394
+   min time = 1249
 
 for Bx = 12, By = 16
-   mean time = 2725.366666666667
-   max time = 4015
-   min time = 2155
+   mean time = 1237.1
+   max time = 1328
+   min time = 1226
 
 for Bx = 12, By = 22
-   mean time = 2360.3333333333335
-   max time = 4533
-   min time = 1800
+   mean time = 1227.34
+   max time = 1491
+   min time = 1208
 
 for Bx = 12, By = 44
-   mean time = 1981.3666666666666
-   max time = 2390
-   min time = 1815
+   mean time = 1201.14
+   max time = 1357
+   min time = 1039
 
 for Bx = 12, By = 88
-   mean time = 1960.6
-   max time = 2864
-   min time = 1785
+   mean time = 1218.0
+   max time = 1649
+   min time = 1194
 
 for Bx = 12, By = 176
-   mean time = 1922.8666666666666
-   max time = 2782
-   min time = 1794
+   mean time = 1194.96
+   max time = 1328
+   min time = 1181
 
 for Bx = 16, By = 1
-   mean time = 3090.266666666667
-   max time = 3896
-   min time = 2792
+   mean time = 1888.12
+   max time = 2562
+   min time = 1631
 
 for Bx = 16, By = 2
-   mean time = 2902.0666666666666
-   max time = 4022
-   min time = 2350
+   mean time = 1522.06
+   max time = 1564
+   min time = 1455
 
 for Bx = 16, By = 4
-   mean time = 2519.5666666666666
-   max time = 3333
-   min time = 2102
+   mean time = 1373.82
+   max time = 1430
+   min time = 1201
 
 for Bx = 16, By = 8
-   mean time = -31148.933333333334
-   max time = 3661
-   min time = -997759
+   mean time = 1286.3
+   max time = 1399
+   min time = 1268
 
 for Bx = 16, By = 11
-   mean time = 2060.233333333333
-   max time = 3346
-   min time = 1846
+   mean time = 1254.66
+   max time = 1343
+   min time = 1142
 
 for Bx = 16, By = 16
-   mean time = 1977.0333333333333
-   max time = 2457
-   min time = 1823
+   mean time = 1244.7
+   max time = 1526
+   min time = 1091
 
 for Bx = 16, By = 22
-   mean time = 1958.3333333333333
-   max time = 2407
-   min time = 1798
+   mean time = 1229.02
+   max time = 1715
+   min time = 1087
 
 for Bx = 16, By = 44
-   mean time = 2014.3333333333333
-   max time = 2623
-   min time = 1811
+   mean time = 1201.08
+   max time = 1258
+   min time = 1189
 
 for Bx = 16, By = 88
-   mean time = 2120.0666666666666
-   max time = 3836
-   min time = 1803
+   mean time = 1237.98
+   max time = 1808
+   min time = 1192
 
 for Bx = 16, By = 176
-   mean time = 1997.3666666666666
-   max time = 2540
-   min time = 1802
+   mean time = 1196.04
+   max time = 1323
+   min time = 1092
 
 for Bx = 18, By = 1
-   mean time = -30169.2
-   max time = 4630
-   min time = -996628
+   mean time = 1837.86
+   max time = 2197
+   min time = 1778
 
 for Bx = 18, By = 2
-   mean time = 2501.3333333333335
-   max time = 2999
-   min time = 2274
+   mean time = 1536.02
+   max time = 1925
+   min time = 1497
 
 for Bx = 18, By = 4
-   mean time = 2306.233333333333
-   max time = 3728
-   min time = 2031
+   mean time = 1388.36
+   max time = 1759
+   min time = 1357
 
 for Bx = 18, By = 8
-   mean time = 2026.5
-   max time = 2591
-   min time = 1884
+   mean time = 1288.98
+   max time = 1500
+   min time = 1263
 
 for Bx = 18, By = 11
-   mean time = 2051.5666666666666
-   max time = 2573
-   min time = 1841
+   mean time = 1253.46
+   max time = 1323
+   min time = 1238
 
 for Bx = 18, By = 16
-   mean time = 1918.8
-   max time = 2283
-   min time = 1810
+   mean time = 1240.6
+   max time = 1627
+   min time = 1218
 
 for Bx = 18, By = 22
-   mean time = 2018.3
-   max time = 2835
-   min time = 1813
+   mean time = 1218.84
+   max time = 1286
+   min time = 1207
 
 for Bx = 18, By = 44
-   mean time = 2035.2666666666667
-   max time = 2625
-   min time = 1814
+   mean time = 1201.68
+   max time = 1289
+   min time = 1188
 
 for Bx = 18, By = 88
-   mean time = -31322.1
-   max time = 2375
-   min time = -997806
+   mean time = 1214.36
+   max time = 1610
+   min time = 1191
 
 for Bx = 18, By = 176
-   mean time = 1927.9333333333334
-   max time = 2220
-   min time = 1788
+   mean time = 1188.42
+   max time = 1229
+   min time = 1178
 
 for Bx = 24, By = 1
-   mean time = 2955.766666666667
-   max time = 3632
-   min time = 2722
+   mean time = 1791.38
+   max time = 1837
+   min time = 1542
 
 for Bx = 24, By = 2
-   mean time = 2502.733333333333
-   max time = 4103
-   min time = 2236
+   mean time = 1524.54
+   max time = 2017
+   min time = 1371
 
 for Bx = 24, By = 4
-   mean time = 2221.733333333333
-   max time = 3150
-   min time = 1995
+   mean time = 1364.68
+   max time = 1426
+   min time = 1344
 
 for Bx = 24, By = 8
-   mean time = 1995.9333333333334
-   max time = 2432
-   min time = 1875
+   mean time = 1280.5
+   max time = 1400
+   min time = 1259
 
 for Bx = 24, By = 11
-   mean time = 1982.3
-   max time = 2661
-   min time = 1836
+   mean time = 1304.42
+   max time = 1933
+   min time = 1169
 
 for Bx = 24, By = 16
-   mean time = -31085.433333333334
-   max time = 3537
-   min time = -997286
+   mean time = 1233.7
+   max time = 1696
+   min time = 1087
 
 for Bx = 24, By = 22
-   mean time = 3003.866666666667
-   max time = 4793
-   min time = 2322
+   mean time = 1221.8775510204082
+   max time = 1409
+   min time = 1203
 
 for Bx = 24, By = 44
-   mean time = 2194.233333333333
-   max time = 3984
-   min time = 1823
+   mean time = 1207.26
+   max time = 1409
+   min time = 1187
 
 for Bx = 24, By = 88
-   mean time = 2033.9333333333334
-   max time = 2449
-   min time = 1818
+   mean time = 1228.12
+   max time = 1512
+   min time = 1191
 
 for Bx = 24, By = 176
-   mean time = 2016.6333333333334
-   max time = 2586
-   min time = 1814
+   mean time = 1196.02
+   max time = 1327
+   min time = 1178
 
 for Bx = 36, By = 1
-   mean time = 2900.366666666667
-   max time = 3312
-   min time = 2699
+   mean time = 1822.38
+   max time = 2817
+   min time = 1621
 
 for Bx = 36, By = 2
-   mean time = 2405.4666666666667
-   max time = 3155
-   min time = 2202
+   mean time = 1501.88
+   max time = 2175
+   min time = 1297
 
 for Bx = 36, By = 4
-   mean time = 2124.633333333333
-   max time = 2459
-   min time = 1975
+   mean time = 1334.98
+   max time = 1420
+   min time = 1196
 
 for Bx = 36, By = 8
-   mean time = 2089.633333333333
-   max time = 2781
-   min time = 1874
+   mean time = 1285.4
+   max time = 1772
+   min time = 1252
 
 for Bx = 36, By = 11
-   mean time = 2058.7
-   max time = 2592
-   min time = 1837
+   mean time = 1251.6326530612246
+   max time = 1399
+   min time = 1231
 
 for Bx = 36, By = 16
-   mean time = 2001.3333333333333
-   max time = 2516
-   min time = 1762
+   mean time = 1224.78
+   max time = 1277
+   min time = 1211
 
 for Bx = 36, By = 22
-   mean time = 1921.5666666666666
-   max time = 2284
-   min time = 1777
+   mean time = 1223.26
+   max time = 1498
+   min time = 1200
 
 for Bx = 36, By = 44
-   mean time = 1997.1333333333334
-   max time = 2379
-   min time = 1810
+   mean time = 1199.38
+   max time = 1335
+   min time = 1186
 
 for Bx = 36, By = 88
-   mean time = 2062.7
-   max time = 2752
-   min time = 1804
+   mean time = 1209.12
+   max time = 1359
+   min time = 1189
 
 for Bx = 36, By = 176
-   mean time = 2003.9
-   max time = 2349
-   min time = 1808
+   mean time = 1192.7
+   max time = 1284
+   min time = 1180
 
 for Bx = 48, By = 1
-   mean time = -30407.633333333335
-   max time = 3468
-   min time = -997031
+   mean time = 1764.82
+   max time = 1866
+   min time = 1652
 
 for Bx = 48, By = 2
-   mean time = 2406.3
-   max time = 2832
-   min time = 2176
+   mean time = 1494.58
+   max time = 2005
+   min time = 1296
 
 for Bx = 48, By = 4
-   mean time = 2131.2
-   max time = 2752
-   min time = 1956
+   mean time = 1346.2448979591836
+   max time = 1455
+   min time = 1329
 
 for Bx = 48, By = 8
-   mean time = 2038.4666666666667
-   max time = 2420
-   min time = 1883
+   mean time = 1275.14
+   max time = 1643
+   min time = 1250
 
 for Bx = 48, By = 11
-   mean time = 1969.2333333333333
-   max time = 2380
-   min time = 1827
+   mean time = 1245.86
+   max time = 1371
+   min time = 1190
 
 for Bx = 48, By = 16
-   mean time = 1968.3333333333333
-   max time = 3446
-   min time = 1801
+   mean time = 1228.36
+   max time = 1303
+   min time = 1211
 
 for Bx = 48, By = 22
-   mean time = 1928.5666666666666
-   max time = 2204
-   min time = 1785
+   mean time = 1218.38
+   max time = 1357
+   min time = 1199
 
 for Bx = 48, By = 44
-   mean time = 1998.8666666666666
-   max time = 2734
-   min time = 1759
+   mean time = 1201.06
+   max time = 1334
+   min time = 1185
 
 for Bx = 48, By = 88
-   mean time = -31353.3
-   max time = 2418
-   min time = -998150
+   mean time = 1202.4
+   max time = 1298
+   min time = 1189
 
 for Bx = 48, By = 176
-   mean time = 1973.7333333333333
-   max time = 2444
-   min time = 1807
+   mean time = 1196.74
+   max time = 1272
+   min time = 1180
 
 for Bx = 72, By = 1
-   mean time = 3100.366666666667
-   max time = 4433
-   min time = 2683
+   mean time = 1758.6938775510205
+   max time = 1908
+   min time = 1712
 
 for Bx = 72, By = 2
-   mean time = 2371.266666666667
-   max time = 3290
-   min time = 2164
+   mean time = 1496.08
+   max time = 1994
+   min time = 1458
 
 for Bx = 72, By = 4
-   mean time = 2166.1
-   max time = 2534
-   min time = 1977
+   mean time = 1346.9
+   max time = 1491
+   min time = 1322
 
 for Bx = 72, By = 8
-   mean time = 1991.0333333333333
-   max time = 2279
-   min time = 1856
+   mean time = 1287.84
+   max time = 1916
+   min time = 1091
 
 for Bx = 72, By = 11
-   mean time = 1987.5333333333333
-   max time = 2380
-   min time = 1839
+   mean time = 1248.46
+   max time = 1404
+   min time = 1160
 
 for Bx = 72, By = 16
-   mean time = 1919.3333333333333
-   max time = 2423
-   min time = 1759
+   mean time = 1218.98
+   max time = 1357
+   min time = 1119
 
 for Bx = 72, By = 22
-   mean time = 1919.0
-   max time = 2144
-   min time = 1786
+   mean time = 1219.22
+   max time = 1746
+   min time = 1047
 
 for Bx = 72, By = 44
-   mean time = 2020.7666666666667
-   max time = 2771
-   min time = 1828
+   mean time = 1200.16
+   max time = 1396
+   min time = 1052
 
 for Bx = 72, By = 88
-   mean time = 1985.0666666666666
-   max time = 3432
-   min time = 1814
+   mean time = 1215.04
+   max time = 1355
+   min time = 1193
 
 for Bx = 72, By = 176
-   mean time = 1944.9333333333334
-   max time = 2692
-   min time = 1803
+   mean time = 1189.9
+   max time = 1463
+   min time = 1030
 
 for Bx = 144, By = 1
-   mean time = 3646.4
-   max time = 6379
-   min time = 2692
+   mean time = 1718.92
+   max time = 1847
+   min time = 1490
 
 for Bx = 144, By = 2
-   mean time = 3008.7
-   max time = 4675
-   min time = 2332
+   mean time = 1475.14
+   max time = 1740
+   min time = 1445
 
 for Bx = 144, By = 4
-   mean time = 2407.7
-   max time = 3034
-   min time = 2029
+   mean time = 1393.4
+   max time = 1799
+   min time = 1320
 
 for Bx = 144, By = 8
-   mean time = -31161.1
-   max time = 2851
-   min time = -998079
+   mean time = 1281.38
+   max time = 1348
+   min time = 1268
 
 for Bx = 144, By = 11
-   mean time = 2102.0
-   max time = 2576
-   min time = 1889
+   mean time = 1258.48
+   max time = 1405
+   min time = 1242
 
 for Bx = 144, By = 16
-   mean time = 2055.9666666666667
-   max time = 2891
-   min time = 1835
+   mean time = 1239.76
+   max time = 1366
+   min time = 1205
 
 for Bx = 144, By = 22
-   mean time = 2001.3333333333333
-   max time = 3675
-   min time = 1819
+   mean time = 1225.4285714285713
+   max time = 1364
+   min time = 1207
 
 for Bx = 144, By = 44
-   mean time = 2056.3333333333335
-   max time = 2611
-   min time = 1834
+   mean time = 1222.96
+   max time = 1856
+   min time = 1189
 
 for Bx = 144, By = 88
-   mean time = 2094.3
-   max time = 3584
-   min time = 1820
+   mean time = 1217.48
+   max time = 1866
+   min time = 1089
 
 for Bx = 144, By = 176
-   mean time = 2026.6666666666667
-   max time = 2541
-   min time = 1835
+   mean time = 1204.46
+   max time = 1634
+   min time = 1179
 

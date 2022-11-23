@@ -4,14 +4,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
+#include <string.h>
 
 #define N 144     /*Frame dimension for QCIF format*/
 #define M 176     /*Frame dimension for QCIF format*/
-#define B 16      /*Block size*/
+// #define Bx 48     /*Block size x*/
+// #define By 176    /*Block size y*/
 #define p 7       /*Search space. Restricted in a [-p,p] region around the
                     original location of the block.*/
 
-void read_sequence(int current[N][M], int previous[N][M])
+void read_sequence(int **current, int **previous)
 { 
 	FILE *picture0, *picture1;
 	int i, j;
@@ -51,21 +53,20 @@ void read_sequence(int current[N][M], int previous[N][M])
 }
 
 
-void phods_motion_estimation(int current[N][M], int previous[N][M],
-    int vectors_x[N/B][M/B],int vectors_y[N/B][M/B])
+void phods_motion_estimation(int **current, int **previous,
+    int **vectors_x, int **vectors_y, int Bx, int By)
 {
     int x, y, i, j, k, l, p1, p2, q2, distx, disty, S, min1, min2, bestx, besty;
 
     distx = 0;
     disty = 0;
 
-    long int b_b = 255*B*B;
+    long int b_b = 255*Bx*By;
+
+    int x_bound = N/Bx;
+    int y_bound = M/By;
 
     /*For all blocks in the current frame*/
-
-    int x_bound = N/B;
-    int y_bound = M/B;
-
     for(x=0; x < x_bound; x++)
     {
 
@@ -80,8 +81,8 @@ void phods_motion_estimation(int current[N][M], int previous[N][M],
             int vec_x = vectors_x[x][y];
             int vec_y = vectors_y[x][y];
 
-            int b_x = B*x;
-            int b_y = B*y;
+            int b_x = Bx*x;
+            int b_y = By*y;
 
             int b_vec_x = b_x + vec_x;
             int b_vec_y = b_y + vec_y;
@@ -105,7 +106,7 @@ void phods_motion_estimation(int current[N][M], int previous[N][M],
                     int M_1_i = (M-1) - i;
 
                     /*For all pixels in the block*/
-                    for(k=0; k<B; k++)     
+                    for(k=0; k<Bx; k++)     
                     {
 
                         int b_x_k = b_x + k;
@@ -114,7 +115,7 @@ void phods_motion_estimation(int current[N][M], int previous[N][M],
                         int8_t check_x_i = (b_x_vec_x_i) < 0 || (b_x_vec_x_i) > N_1;
                         int8_t check_x = (b_x_vec_x) < 0 || (b_x_vec_x) > N_1;
 
-                        for(l=0; l<B; l++)
+                        for(l=0; l<By; l++)
                         {
                             
                             int b_y_l = b_y + l;
@@ -159,22 +160,44 @@ void phods_motion_estimation(int current[N][M], int previous[N][M],
     }
 } 
 
-int main()
+int main(int argc, char **argv)
 {  
-  int current[N][M], previous[N][M], motion_vectors_x[N/B][M/B],
-      motion_vectors_y[N/B][M/B], i, j;
 
-	read_sequence(current,previous);
+    int Bx = atoi(argv[1]);
+    int By = atoi(argv[2]);
 
-  struct timeval start, end;
+    int **current = (int **) malloc(sizeof(int *) * N);
+    int **previous = (int **) malloc(sizeof(int *) * N);
+    int **motion_vectors_x = (int **) malloc(sizeof(int *) * N/Bx);
+    int **motion_vectors_y = (int **) malloc(sizeof(int *) * N/Bx);
 
-  gettimeofday(&start, NULL);
+    int k;
+    for(k = 0; k < N; k++){
+        current[k] = (int *) malloc(sizeof(int) * M);
+        previous[k] = (int *) malloc(sizeof(int) * M);
+    }
 
-  phods_motion_estimation(current,previous,motion_vectors_x,motion_vectors_y);
+    for(k = 0; k < N/Bx; k++){
+        motion_vectors_x[k] = (int *) malloc(sizeof(int) * M/By);
+        motion_vectors_y[k] = (int *) malloc(sizeof(int) * M/By);
+    }
 
-  gettimeofday(&end, NULL);
+    // int current[N][M], previous[N][M], motion_vectors_x[N/Bx][M/By],
+    //     motion_vectors_y[N/Bx][M/By], i, j;
 
-  printf("%ld\n", end.tv_usec - start.tv_usec);
+    int i, j;
 
-  return 0;
+    read_sequence(current,previous);
+
+    struct timeval start, end;
+
+    gettimeofday(&start, NULL);
+
+    phods_motion_estimation(current, previous, motion_vectors_x, motion_vectors_y, Bx, By);
+
+    gettimeofday(&end, NULL);
+
+    printf("%ld\n", end.tv_usec - start.tv_usec);
+
+    return 0;
 }

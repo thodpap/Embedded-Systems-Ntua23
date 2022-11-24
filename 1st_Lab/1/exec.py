@@ -26,7 +26,7 @@ for i in a_144:
 
             result = subprocess.run(['./phods_opt_bx_by ' + string], stdout=subprocess.PIPE, shell=True)
             
-            time = int(result.stdout.decode('utf-8').replace("\n", ""))
+            time = float(result.stdout.decode('utf-8').replace("\n", ""))
 
             max_time = max(time, max_time)
             min_time = min(time, min_time)

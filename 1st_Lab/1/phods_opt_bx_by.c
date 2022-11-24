@@ -197,7 +197,9 @@ int main(int argc, char **argv)
 
     gettimeofday(&end, NULL);
 
-    printf("%ld\n", end.tv_usec - start.tv_usec);
+    float time = (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec)*0.000001;
+
+    printf("%lf\n", time);
 
     return 0;
 }

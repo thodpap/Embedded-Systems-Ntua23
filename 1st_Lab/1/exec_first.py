@@ -16,13 +16,14 @@ for i in range(N):
     result = subprocess.run(['./phods'], stdout=subprocess.PIPE)
     time = float(result.stdout.decode('utf-8').replace("\n", ""))
 
-    print("current time =", time)
-
-    max_time = max(time, max_time)
-    min_time = min(time, min_time)
-    mean_time += time
-
-mean_time /= N
+    # print("current time =", time)
+    if time > 0:
+        max_time = max(time, max_time)
+        min_time = min(time, min_time)
+        mean_time += time
+        c += 1
+        
+mean_time /= c
 
 print()
 

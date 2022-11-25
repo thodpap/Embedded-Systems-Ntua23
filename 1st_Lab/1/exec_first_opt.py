@@ -8,12 +8,12 @@ N = 10
 
 
 mean_time = 0 
-print(subprocess.run(['gcc', 'phods.c', '-O0', '-o', 'phods'], stdout=subprocess.PIPE).stdout.decode('utf-8'))
+print(subprocess.run(['gcc', 'phods_opt.c', '-O0', '-o', 'phods_opt'], stdout=subprocess.PIPE).stdout.decode('utf-8'))
 for i in range(N):
     
     print(i, "th loop")
 
-    result = subprocess.run(['./phods'], stdout=subprocess.PIPE)
+    result = subprocess.run(['./phods_opt'], stdout=subprocess.PIPE)
     time = float(result.stdout.decode('utf-8').replace("\n", ""))
 
     # print("current time =", time)

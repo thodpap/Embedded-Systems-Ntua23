@@ -57,6 +57,9 @@ void phods_motion_estimation(int **current, int **previous,
     int **vectors_x, int **vectors_y, int Bx, int By)
 {
     int x, y, i, j, k, l, p1, p2, q2, distx, disty, S, min1, min2, bestx, besty;
+    int vec_x, vec_y, b_x, b_y, b_vec_x, b_vec_y, M_1_i, b_x_k, b_x_vec_x, b_x_vec_x_i, b_y_l, b_y_vec_y;
+
+    int8_t check_x_i, check_x;
 
     distx = 0;
     disty = 0;
@@ -65,6 +68,9 @@ void phods_motion_estimation(int **current, int **previous,
 
     int x_bound = N/Bx;
     int y_bound = M/By;
+
+    int M_1 = M-1;
+    int N_1 = N-1;
 
     /*For all blocks in the current frame*/
     for(x=0; x < x_bound; x++)
@@ -78,14 +84,14 @@ void phods_motion_estimation(int **current, int **previous,
             vectors_x[x][y] = 0;
             vectors_y[x][y] = 0;
 
-            int vec_x = vectors_x[x][y];
-            int vec_y = vectors_y[x][y];
+            vec_x = vectors_x[x][y];
+            vec_y = vectors_y[x][y];
 
-            int b_x = Bx*x;
-            int b_y = By*y;
+            b_x = Bx*x;
+            b_y = By*y;
 
-            int b_vec_x = b_x + vec_x;
-            int b_vec_y = b_y + vec_y;
+            b_vec_x = b_x + vec_x;
+            b_vec_y = b_y + vec_y;
 
             
             while(S > 0)
@@ -100,29 +106,26 @@ void phods_motion_estimation(int **current, int **previous,
 
                     distx = 0;
                     disty = 0;
-
-                    int M_1 = M-1;
-                    int N_1 = N-1;
-                    int M_1_i = (M-1) - i;
+                    M_1_i = (M-1) - i;
 
                     /*For all pixels in the block*/
                     for(k=0; k<Bx; k++)     
                     {
 
-                        int b_x_k = b_x + k;
-                        int b_x_vec_x = b_vec_x + k;
-                        int b_x_vec_x_i = b_x_vec_x + i;
-                        int8_t check_x_i = (b_x_vec_x_i) < 0 || (b_x_vec_x_i) > N_1;
-                        int8_t check_x = (b_x_vec_x) < 0 || (b_x_vec_x) > N_1;
+                        b_x_k = b_x + k;
+                        b_x_vec_x = b_vec_x + k;
+                        b_x_vec_x_i = b_x_vec_x + i;
+                        check_x_i = (b_x_vec_x_i) < 0 || (b_x_vec_x_i) > N_1;
+                        check_x = (b_x_vec_x) < 0 || (b_x_vec_x) > N_1;
 
                         for(l=0; l<By; l++)
                         {
                             
-                            int b_y_l = b_y + l;
+                            b_y_l = b_y + l;
 
                             p1 = current[b_x_k][b_y_l];
 
-                            int b_y_vec_y = b_vec_y + l;
+                            b_y_vec_y = b_vec_y + l;
 
                             p2 = ((check_x_i) || (b_y_vec_y) < 0 || (b_y_vec_y) > M_1) ? 0 : previous[b_x_vec_x_i][b_y_vec_y];
 

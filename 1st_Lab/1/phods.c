@@ -174,5 +174,26 @@ int main()
 
   printf("%lf\n", time);
 
+  /* DEBUG ONLY
+  int g, pq;
+
+  for (g = 0; g < N/B; g++)
+  {
+    for (pq = 0; pq < M/B; pq++)
+    {
+      printf("%d ", motion_vectors_x[g][pq]);
+    }
+    printf("\n");
+  }
+
+  for (g = 0; g < N/B; g++)
+  {
+    for (pq = 0; pq < M/B; pq++)
+    {
+      printf("%d ", motion_vectors_y[g][pq]);
+    }
+    printf("\n");
+  }*/
+
   return 0;
 }

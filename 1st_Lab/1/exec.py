@@ -19,7 +19,6 @@ for i in a_144:
         min_time = 1e9
 
         mean_time = 0 
-        c = 0
         
         for _ in range(N):
 
@@ -28,8 +27,14 @@ for i in a_144:
             result = subprocess.run(['./phods_opt_bx_by ' + string], stdout=subprocess.PIPE, shell=True)
             
             time = float(result.stdout.decode('utf-8').replace("\n", ""))
+            
+            max_time = max(max_time, time)
 
-        mean_time /= c
+            min_time = min(min_time, time)
+
+            mean_time += time
+
+        mean_time /= N
 
         f.write("\n")
         f.write(f"   mean time = {mean_time}\n")

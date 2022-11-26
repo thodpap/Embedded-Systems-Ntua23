@@ -33,6 +33,6 @@ df.columns = unrolls
 
 plt.figure(figsize=(10, 10))
 sns.boxplot(data=df)
-plt.ylabel("Mean Time (s)")
-plt.title('Box Plot for Mean times of each implementation')
+plt.ylabel("Time (s)")
+plt.title('Box Plot for Times of each implementation')
 plt.savefig("./plots/times.png", bbox_inches="tight")

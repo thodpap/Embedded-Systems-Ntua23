@@ -1,0 +1,750 @@
+for Bx = 1, By = 1
+   mean time = 0.004995960000000001
+   max time = 0.005389
+   min time = 0.004768
+
+for Bx = 1, By = 2
+   mean time = 0.0033901599999999993
+   max time = 0.003799
+   min time = 0.003336
+
+for Bx = 1, By = 4
+   mean time = 0.0025889999999999997
+   max time = 0.002785
+   min time = 0.002554
+
+for Bx = 1, By = 8
+   mean time = 0.0021782600000000004
+   max time = 0.00224
+   min time = 0.00215
+
+for Bx = 1, By = 11
+   mean time = 0.002086999999999999
+   max time = 0.002332
+   min time = 0.002043
+
+for Bx = 1, By = 16
+   mean time = 0.002017659999999999
+   max time = 0.002229
+   min time = 0.001984
+
+for Bx = 1, By = 22
+   mean time = 0.0019491999999999999
+   max time = 0.002134
+   min time = 0.001917
+
+for Bx = 1, By = 44
+   mean time = 0.0018841000000000005
+   max time = 0.002161
+   min time = 0.001855
+
+for Bx = 1, By = 88
+   mean time = 0.00186324
+   max time = 0.003102
+   min time = 0.001795
+
+for Bx = 1, By = 176
+   mean time = 0.0017869800000000003
+   max time = 0.00186
+   min time = 0.001764
+
+for Bx = 2, By = 1
+   mean time = 0.0038419400000000003
+   max time = 0.00414
+   min time = 0.00379
+
+for Bx = 2, By = 2
+   mean time = 0.0028318000000000006
+   max time = 0.003198
+   min time = 0.002751
+
+for Bx = 2, By = 4
+   mean time = 0.0024743599999999997
+   max time = 0.002947
+   min time = 0.002222
+
+for Bx = 2, By = 8
+   mean time = 0.0020746800000000006
+   max time = 0.002357
+   min time = 0.002034
+
+for Bx = 2, By = 11
+   mean time = 0.0021269000000000006
+   max time = 0.002218
+   min time = 0.001957
+
+for Bx = 2, By = 16
+   mean time = 0.0021042400000000003
+   max time = 0.002416
+   min time = 0.001902
+
+for Bx = 2, By = 22
+   mean time = 0.00200226
+   max time = 0.002352
+   min time = 0.00186
+
+for Bx = 2, By = 44
+   mean time = 0.00207702
+   max time = 0.002356
+   min time = 0.002036
+
+for Bx = 2, By = 88
+   mean time = 0.0019878999999999995
+   max time = 0.002021
+   min time = 0.001973
+
+for Bx = 2, By = 176
+   mean time = 0.0019687999999999997
+   max time = 0.002065
+   min time = 0.001943
+
+for Bx = 3, By = 1
+   mean time = 0.003760779999999999
+   max time = 0.00416
+   min time = 0.00342
+
+for Bx = 3, By = 2
+   mean time = 0.0025995000000000002
+   max time = 0.003077
+   min time = 0.002545
+
+for Bx = 3, By = 4
+   mean time = 0.0022619999999999997
+   max time = 0.00261
+   min time = 0.002198
+
+for Bx = 3, By = 8
+   mean time = 0.0022896800000000005
+   max time = 0.00259
+   min time = 0.00223
+
+for Bx = 3, By = 11
+   mean time = 0.00214482
+   max time = 0.002512
+   min time = 0.002115
+
+for Bx = 3, By = 16
+   mean time = 0.0021342200000000005
+   max time = 0.002565
+   min time = 0.002101
+
+for Bx = 3, By = 22
+   mean time = 0.0020761799999999987
+   max time = 0.002259
+   min time = 0.002048
+
+for Bx = 3, By = 44
+   mean time = 0.00203742
+   max time = 0.002096
+   min time = 0.002018
+
+for Bx = 3, By = 88
+   mean time = 0.00198434
+   max time = 0.002042
+   min time = 0.001966
+
+for Bx = 3, By = 176
+   mean time = 0.0019840799999999996
+   max time = 0.002263
+   min time = 0.001942
+
+for Bx = 4, By = 1
+   mean time = 0.0035572000000000004
+   max time = 0.00381
+   min time = 0.003505
+
+for Bx = 4, By = 2
+   mean time = 0.0027436400000000003
+   max time = 0.003019
+   min time = 0.002691
+
+for Bx = 4, By = 4
+   mean time = 0.0024018800000000003
+   max time = 0.002908
+   min time = 0.00235
+
+for Bx = 4, By = 8
+   mean time = 0.0022093600000000005
+   max time = 0.002453
+   min time = 0.002144
+
+for Bx = 4, By = 11
+   mean time = 0.0021968400000000003
+   max time = 0.002585
+   min time = 0.002136
+
+for Bx = 4, By = 16
+   mean time = 0.00231088
+   max time = 0.002587
+   min time = 0.002281
+
+for Bx = 4, By = 22
+   mean time = 0.00229858
+   max time = 0.002901
+   min time = 0.002238
+
+for Bx = 4, By = 44
+   mean time = 0.002277779999999999
+   max time = 0.002535
+   min time = 0.002235
+
+for Bx = 4, By = 88
+   mean time = 0.0022486800000000003
+   max time = 0.002946
+   min time = 0.002182
+
+for Bx = 4, By = 176
+   mean time = 0.00219668
+   max time = 0.002459
+   min time = 0.002153
+
+for Bx = 6, By = 1
+   mean time = 0.00326004
+   max time = 0.003889
+   min time = 0.003034
+
+for Bx = 6, By = 2
+   mean time = 0.00249182
+   max time = 0.00281
+   min time = 0.002386
+
+for Bx = 6, By = 4
+   mean time = 0.00211314
+   max time = 0.002404
+   min time = 0.002082
+
+for Bx = 6, By = 8
+   mean time = 0.00198758
+   max time = 0.002263
+   min time = 0.001933
+
+for Bx = 6, By = 11
+   mean time = 0.0019374
+   max time = 0.002186
+   min time = 0.001885
+
+for Bx = 6, By = 16
+   mean time = 0.0018896000000000002
+   max time = 0.002223
+   min time = 0.001838
+
+for Bx = 6, By = 22
+   mean time = 0.0018385400000000003
+   max time = 0.002107
+   min time = 0.00181
+
+for Bx = 6, By = 44
+   mean time = 0.0018567599999999998
+   max time = 0.002676
+   min time = 0.001817
+
+for Bx = 6, By = 88
+   mean time = 0.00182318
+   max time = 0.00223
+   min time = 0.001782
+
+for Bx = 6, By = 176
+   mean time = 0.0018077600000000005
+   max time = 0.002125
+   min time = 0.001758
+
+for Bx = 8, By = 1
+   mean time = 0.0029947200000000006
+   max time = 0.003158
+   min time = 0.002948
+
+for Bx = 8, By = 2
+   mean time = 0.0023588000000000003
+   max time = 0.002748
+   min time = 0.002323
+
+for Bx = 8, By = 4
+   mean time = 0.00215328
+   max time = 0.002413
+   min time = 0.002078
+
+for Bx = 8, By = 8
+   mean time = 0.0021482199999999997
+   max time = 0.002427
+   min time = 0.002102
+
+for Bx = 8, By = 11
+   mean time = 0.002074780000000001
+   max time = 0.002183
+   min time = 0.00205
+
+for Bx = 8, By = 16
+   mean time = 0.00202656
+   max time = 0.002106
+   min time = 0.002008
+
+for Bx = 8, By = 22
+   mean time = 0.00201512
+   max time = 0.002286
+   min time = 0.001981
+
+for Bx = 8, By = 44
+   mean time = 0.002044
+   max time = 0.002475
+   min time = 0.001993
+
+for Bx = 8, By = 88
+   mean time = 0.0020032399999999994
+   max time = 0.00239
+   min time = 0.001954
+
+for Bx = 8, By = 176
+   mean time = 0.0019512000000000004
+   max time = 0.001983
+   min time = 0.001936
+
+for Bx = 9, By = 1
+   mean time = 0.0033631200000000007
+   max time = 0.003691
+   min time = 0.003306
+
+for Bx = 9, By = 2
+   mean time = 0.00259318
+   max time = 0.002881
+   min time = 0.002548
+
+for Bx = 9, By = 4
+   mean time = 0.0023109800000000002
+   max time = 0.002577
+   min time = 0.002264
+
+for Bx = 9, By = 8
+   mean time = 0.00215892
+   max time = 0.002507
+   min time = 0.002089
+
+for Bx = 9, By = 11
+   mean time = 0.0020780000000000004
+   max time = 0.002361
+   min time = 0.002045
+
+for Bx = 9, By = 16
+   mean time = 0.00204256
+   max time = 0.002312
+   min time = 0.002008
+
+for Bx = 9, By = 22
+   mean time = 0.00200906
+   max time = 0.002293
+   min time = 0.001977
+
+for Bx = 9, By = 44
+   mean time = 0.002013819999999999
+   max time = 0.002425
+   min time = 0.001799
+
+for Bx = 9, By = 88
+   mean time = 0.00179868
+   max time = 0.001874
+   min time = 0.001775
+
+for Bx = 9, By = 176
+   mean time = 0.0018091399999999988
+   max time = 0.002174
+   min time = 0.00174
+
+for Bx = 12, By = 1
+   mean time = 0.002997379999999999
+   max time = 0.003679
+   min time = 0.002911
+
+for Bx = 12, By = 2
+   mean time = 0.00236314
+   max time = 0.002618
+   min time = 0.002277
+
+for Bx = 12, By = 4
+   mean time = 0.00206426
+   max time = 0.002315
+   min time = 0.002027
+
+for Bx = 12, By = 8
+   mean time = 0.0019239400000000012
+   max time = 0.002197
+   min time = 0.001884
+
+for Bx = 12, By = 11
+   mean time = 0.0018859199999999995
+   max time = 0.002034
+   min time = 0.001851
+
+for Bx = 12, By = 16
+   mean time = 0.0018513200000000003
+   max time = 0.002146
+   min time = 0.001812
+
+for Bx = 12, By = 22
+   mean time = 0.0018690999999999998
+   max time = 0.002223
+   min time = 0.001795
+
+for Bx = 12, By = 44
+   mean time = 0.0021643999999999995
+   max time = 0.003599
+   min time = 0.001807
+
+for Bx = 12, By = 88
+   mean time = 0.0018322000000000002
+   max time = 0.002342
+   min time = 0.001773
+
+for Bx = 12, By = 176
+   mean time = 0.0017798599999999994
+   max time = 0.001887
+   min time = 0.001755
+
+for Bx = 16, By = 1
+   mean time = 0.00288104
+   max time = 0.003078
+   min time = 0.002838
+
+for Bx = 16, By = 2
+   mean time = 0.00231796
+   max time = 0.002612
+   min time = 0.002266
+
+for Bx = 16, By = 4
+   mean time = 0.0022580400000000002
+   max time = 0.002545
+   min time = 0.002204
+
+for Bx = 16, By = 8
+   mean time = 0.0022218799999999994
+   max time = 0.002516
+   min time = 0.002063
+
+for Bx = 16, By = 11
+   mean time = 0.00231052
+   max time = 0.002686
+   min time = 0.002246
+
+for Bx = 16, By = 16
+   mean time = 0.00224988
+   max time = 0.002542
+   min time = 0.002208
+
+for Bx = 16, By = 22
+   mean time = 0.00223352
+   max time = 0.002483
+   min time = 0.002189
+
+for Bx = 16, By = 44
+   mean time = 0.0020658199999999995
+   max time = 0.002511
+   min time = 0.001756
+
+for Bx = 16, By = 88
+   mean time = 0.0018040200000000001
+   max time = 0.001959
+   min time = 0.001773
+
+for Bx = 16, By = 176
+   mean time = 0.0021269999999999996
+   max time = 0.003163
+   min time = 0.001721
+
+for Bx = 18, By = 1
+   mean time = 0.0031895599999999993
+   max time = 0.00479
+   min time = 0.0028
+
+for Bx = 18, By = 2
+   mean time = 0.002349539999999999
+   max time = 0.002888
+   min time = 0.002249
+
+for Bx = 18, By = 4
+   mean time = 0.0020229199999999997
+   max time = 0.002125
+   min time = 0.001994
+
+for Bx = 18, By = 8
+   mean time = 0.0021155199999999996
+   max time = 0.002438
+   min time = 0.001887
+
+for Bx = 18, By = 11
+   mean time = 0.0020406200000000004
+   max time = 0.002092
+   min time = 0.002018
+
+for Bx = 18, By = 16
+   mean time = 0.00210928
+   max time = 0.002731
+   min time = 0.001985
+
+for Bx = 18, By = 22
+   mean time = 0.002495940000000001
+   max time = 0.002579
+   min time = 0.002456
+
+for Bx = 18, By = 44
+   mean time = 0.002521900000000001
+   max time = 0.002975
+   min time = 0.00248
+
+for Bx = 18, By = 88
+   mean time = 0.0025011600000000005
+   max time = 0.002888
+   min time = 0.002434
+
+for Bx = 18, By = 176
+   mean time = 0.0024642199999999996
+   max time = 0.002735
+   min time = 0.002416
+
+for Bx = 24, By = 1
+   mean time = 0.0038339599999999995
+   max time = 0.004233
+   min time = 0.003781
+
+for Bx = 24, By = 2
+   mean time = 0.003118039999999999
+   max time = 0.003437
+   min time = 0.003054
+
+for Bx = 24, By = 4
+   mean time = 0.002764680000000001
+   max time = 0.002968
+   min time = 0.002721
+
+for Bx = 24, By = 8
+   mean time = 0.0026233199999999997
+   max time = 0.003048
+   min time = 0.002563
+
+for Bx = 24, By = 11
+   mean time = 0.00215944
+   max time = 0.002705
+   min time = 0.00183
+
+for Bx = 24, By = 16
+   mean time = 0.0019321199999999996
+   max time = 0.002173
+   min time = 0.0018
+
+for Bx = 24, By = 22
+   mean time = 0.00199356
+   max time = 0.002283
+   min time = 0.001962
+
+for Bx = 24, By = 44
+   mean time = 0.002059900000000001
+   max time = 0.002674
+   min time = 0.001981
+
+for Bx = 24, By = 88
+   mean time = 0.002199059999999999
+   max time = 0.002386
+   min time = 0.002164
+
+for Bx = 24, By = 176
+   mean time = 0.0022175000000000003
+   max time = 0.002392
+   min time = 0.002168
+
+for Bx = 36, By = 1
+   mean time = 0.0033818800000000016
+   max time = 0.004296
+   min time = 0.003271
+
+for Bx = 36, By = 2
+   mean time = 0.0027369000000000004
+   max time = 0.003019
+   min time = 0.002672
+
+for Bx = 36, By = 4
+   mean time = 0.00220694
+   max time = 0.003937
+   min time = 0.001963
+
+for Bx = 36, By = 8
+   mean time = 0.0019021200000000009
+   max time = 0.002236
+   min time = 0.001851
+
+for Bx = 36, By = 11
+   mean time = 0.00185888
+   max time = 0.002125
+   min time = 0.001822
+
+for Bx = 36, By = 16
+   mean time = 0.00182736
+   max time = 0.001887
+   min time = 0.001795
+
+for Bx = 36, By = 22
+   mean time = 0.0018381599999999997
+   max time = 0.002141
+   min time = 0.001783
+
+for Bx = 36, By = 44
+   mean time = 0.0018725600000000001
+   max time = 0.002554
+   min time = 0.001799
+
+for Bx = 36, By = 88
+   mean time = 0.00181094
+   max time = 0.002091
+   min time = 0.001775
+
+for Bx = 36, By = 176
+   mean time = 0.0018057400000000001
+   max time = 0.001971
+   min time = 0.001783
+
+for Bx = 48, By = 1
+   mean time = 0.002685840000000001
+   max time = 0.002935
+   min time = 0.002646
+
+for Bx = 48, By = 2
+   mean time = 0.00221604
+   max time = 0.002509
+   min time = 0.00217
+
+for Bx = 48, By = 4
+   mean time = 0.0020029400000000004
+   max time = 0.00229
+   min time = 0.001959
+
+for Bx = 48, By = 8
+   mean time = 0.0019226800000000002
+   max time = 0.002508
+   min time = 0.001847
+
+for Bx = 48, By = 11
+   mean time = 0.0020449599999999997
+   max time = 0.00235
+   min time = 0.002001
+
+for Bx = 48, By = 16
+   mean time = 0.00200624
+   max time = 0.00228
+   min time = 0.001974
+
+for Bx = 48, By = 22
+   mean time = 0.00197754
+   max time = 0.00203
+   min time = 0.001957
+
+for Bx = 48, By = 44
+   mean time = 0.0020341599999999997
+   max time = 0.002267
+   min time = 0.00198
+
+for Bx = 48, By = 88
+   mean time = 0.00199182
+   max time = 0.00207
+   min time = 0.001971
+
+for Bx = 48, By = 176
+   mean time = 0.00198304
+   max time = 0.002122
+   min time = 0.001962
+
+for Bx = 72, By = 1
+   mean time = 0.0029555400000000004
+   max time = 0.003203
+   min time = 0.002879
+
+for Bx = 72, By = 2
+   mean time = 0.00254152
+   max time = 0.003007
+   min time = 0.002373
+
+for Bx = 72, By = 4
+   mean time = 0.002441
+   max time = 0.002706
+   min time = 0.00238
+
+for Bx = 72, By = 8
+   mean time = 0.00229532
+   max time = 0.002503
+   min time = 0.002255
+
+for Bx = 72, By = 11
+   mean time = 0.00226396
+   max time = 0.002536
+   min time = 0.002225
+
+for Bx = 72, By = 16
+   mean time = 0.00223214
+   max time = 0.002412
+   min time = 0.002192
+
+for Bx = 72, By = 22
+   mean time = 0.00223312
+   max time = 0.002551
+   min time = 0.002179
+
+for Bx = 72, By = 44
+   mean time = 0.00226372
+   max time = 0.002539
+   min time = 0.00222
+
+for Bx = 72, By = 88
+   mean time = 0.00222472
+   max time = 0.002398
+   min time = 0.002192
+
+for Bx = 72, By = 176
+   mean time = 0.00222024
+   max time = 0.002488
+   min time = 0.002179
+
+for Bx = 144, By = 1
+   mean time = 0.0032954599999999996
+   max time = 0.0035
+   min time = 0.003209
+
+for Bx = 144, By = 2
+   mean time = 0.0027177400000000006
+   max time = 0.003112
+   min time = 0.00264
+
+for Bx = 144, By = 4
+   mean time = 0.0025596399999999997
+   max time = 0.00281
+   min time = 0.0024
+
+for Bx = 144, By = 8
+   mean time = 0.0023574200000000003
+   max time = 0.002613
+   min time = 0.002275
+
+for Bx = 144, By = 11
+   mean time = 0.0023131800000000006
+   max time = 0.002614
+   min time = 0.002263
+
+for Bx = 144, By = 16
+   mean time = 0.0022665
+   max time = 0.002388
+   min time = 0.002222
+
+for Bx = 144, By = 22
+   mean time = 0.00224728
+   max time = 0.002324
+   min time = 0.002212
+
+for Bx = 144, By = 44
+   mean time = 0.0019066600000000001
+   max time = 0.002369
+   min time = 0.001831
+
+for Bx = 144, By = 88
+   mean time = 0.0018882400000000002
+   max time = 0.002189
+   min time = 0.0018
+
+for Bx = 144, By = 176
+   mean time = 0.0018494199999999994
+   max time = 0.0022
+   min time = 0.001787
+

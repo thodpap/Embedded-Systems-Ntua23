@@ -85,13 +85,7 @@ void phods_motion_estimation(int current[N][M], int previous[N][M],
       vectors_x[x][y] = 0;
       vectors_y[x][y] = 0;
 
-      // vec_x = vectors_x[x][y];
-      // vec_y = vectors_y[x][y];
-
       b_y = B * y;
-
-      // b_vec_x = b_x + vec_x;
-      // b_vec_y = b_y + vec_y;
 
       while (S > 0)
       {
@@ -99,8 +93,6 @@ void phods_motion_estimation(int current[N][M], int previous[N][M],
         min1 = b_b;
         min2 = b_b;
 
-        // vec_x = ;
-        // vec_y = ;
         b_vec_x = b_x + vectors_x[x][y];
         b_vec_y = b_y + vectors_y[x][y];
         
@@ -168,7 +160,7 @@ void phods_motion_estimation(int current[N][M], int previous[N][M],
 int main(int argc, char **argv)
 {
 
-  // B = atoi(argv[1]);
+  B = atoi(argv[1]);
 
   int current[N][M], previous[N][M], motion_vectors_x[N / B][M / B],
       motion_vectors_y[N / B][M / B], i, j;

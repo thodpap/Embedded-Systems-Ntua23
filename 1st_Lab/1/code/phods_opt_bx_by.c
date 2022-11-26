@@ -84,21 +84,17 @@ void phods_motion_estimation(int **current, int **previous,
             vectors_x[x][y] = 0;
             vectors_y[x][y] = 0;
 
-            vec_x = vectors_x[x][y];
-            vec_y = vectors_y[x][y];
-
             b_x = Bx*x;
             b_y = By*y;
 
-            b_vec_x = b_x + vec_x;
-            b_vec_y = b_y + vec_y;
-
-            
             while(S > 0)
             {
 
                 min1 = b_b;
                 min2 = b_b;
+
+                b_vec_x = b_x + vectors_x[x][y];
+                b_vec_y = b_y + vectors_y[x][y];
 
                 /*For all candidate blocks in X dimension*/
                 for(i=-S; i<S+1; i+=S)     

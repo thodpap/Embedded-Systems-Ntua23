@@ -160,7 +160,7 @@ int main()
   int current[N][M], previous[N][M], motion_vectors_x[N/B][M/B],
       motion_vectors_y[N/B][M/B], i, j;
 
-	read_sequence(current,previous);
+	read_sequence(current, previous);
 
   struct timeval start, end;
 

@@ -1,3 +1,9 @@
+'''
+
+        USED ONLY FOR DEBUGGING OF RESULTS (MOTION VECTORS), OTHERWISE SHOULD BE IGNORED
+
+'''
+
 import subprocess
 
 print(subprocess.run(['gcc', 'phods_opt.c', '-O0', '-o', 'phods_opt'], stdout=subprocess.PIPE).stdout.decode('utf-8'))
@@ -14,8 +20,9 @@ min_time = 1e9
 
 mean_time = 0 
 
-result = subprocess.run('./phods_opt', stdout=subprocess.PIPE, shell=True)
+result = subprocess.run('./phods_opt 16', stdout=subprocess.PIPE, shell=True)
 
+# here we suppose that the progamm prints motion_vectors as shown in the end of main of each phods{}.c
 res = result.stdout.decode('utf-8')
    
 f.write(res)

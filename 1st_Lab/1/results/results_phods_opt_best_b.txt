@@ -1,0 +1,25 @@
+for B = 1
+   mean time = 0.0050421
+   max time = 0.005457
+   min time = 0.004939
+
+for B = 2
+   mean time = 0.0027886
+   max time = 0.002819
+   min time = 0.002768
+
+for B = 4
+   mean time = 0.0021763
+   max time = 0.002207
+   min time = 0.00215
+
+for B = 8
+   mean time = 0.0019863000000000003
+   max time = 0.002048
+   min time = 0.001964
+
+for B = 16
+   mean time = 0.0018655999999999998
+   max time = 0.001939
+   min time = 0.001831
+

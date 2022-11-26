@@ -6,9 +6,9 @@ int main()
 	int i;
 	int N=100000000;
 	double *x1, *x2, *x3, *y;
-	double a1= 0.5;
-	double a2= 1;
-	double a3= 1.5;
+	double a1 = 0.5;
+	double a2 = 1;
+	double a3 = 1.5;
 
 	x1 = (double*) malloc(N*sizeof(double));
 	x2 = (double*) malloc(N*sizeof(double));

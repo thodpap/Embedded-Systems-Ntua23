@@ -1,0 +1,622 @@
+
+====== START ORIO: hdron-ThinkPad-E152022-11-26_20:38:19 ======
+
+----- begin reading the source file: tables_orio.c -----
+----- finished reading the source file -----
+
+----- begin parsing annotations -----
+----- finished parsing annotations -----
+
+----- begin optimizations -----
+Search_Space           = 3.200e+01
+Number_of_Parameters   = 01
+Numeric_Parameters     = 01
+Binary_Parameters      = 00
+Categorical_Parameters = 00
+['UF']
+[[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]]
+
+----- begin random search -----
+Size of search space: 14
+Unevaluated coordinates: 14
+Unevaluated parameters: 14
+.
+ compiling timer:
+	gcc -O0 -mcmodel=large -O0 -c -o timer_cpu.o timer_cpu.c
+ building the original code:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -DORIGINAL -o __orio_perftest_original.exe __orio_perftest1.c timer_cpu.o 
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest1.exe __orio_perftest1.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest1.exe  
+(run 1) | 2022-11-26 20:38:19.877403 | {"run": 1, "coordinate": [0], "perf_params": {"UF": 1}, "transform_time": 0.06213068962097168, "compile_time": 0.04425191879272461, "cost": [3.714e-06, 3.486e-06, 3.3e-06, 3.298e-06, 3.269e-06, 3.269e-06, 3.272e-06, 3.276e-06, 3.285e-06, 3.287e-06]}
+>>>> best coordinate found: [0], cost: 3.345600e-06
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest2.exe __orio_perftest2.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest2.exe  
+(run 2) | 2022-11-26 20:38:20.013439 | {"run": 2, "coordinate": [27], "perf_params": {"UF": 28}, "transform_time": 0.07479286193847656, "compile_time": 0.057964324951171875, "cost": [5.02e-06, 4.054e-06, 3.9e-06, 3.866e-06, 3.889e-06, 3.863e-06, 3.85e-06, 3.846e-06, 3.884e-06, 3.883e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest3.exe __orio_perftest3.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest3.exe  
+(run 3) | 2022-11-26 20:38:20.135815 | {"run": 3, "coordinate": [16], "perf_params": {"UF": 17}, "transform_time": 0.06610321998596191, "compile_time": 0.05267739295959473, "cost": [4.63e-06, 3.808e-06, 3.622e-06, 3.61e-06, 3.592e-06, 3.613e-06, 3.632e-06, 3.601e-06, 3.666e-06, 3.611e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest4.exe __orio_perftest4.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest4.exe  
+(run 4) | 2022-11-26 20:38:20.274660 | {"run": 4, "coordinate": [17], "perf_params": {"UF": 18}, "transform_time": 0.07836174964904785, "compile_time": 0.05661511421203613, "cost": [4.649e-06, 3.965e-06, 3.782e-06, 3.759e-06, 3.756e-06, 3.785e-06, 3.76e-06, 3.766e-06, 3.801e-06, 3.771e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest5.exe __orio_perftest5.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest5.exe  
+(run 5) | 2022-11-26 20:38:20.384132 | {"run": 5, "coordinate": [1], "perf_params": {"UF": 2}, "transform_time": 0.05772709846496582, "compile_time": 0.0485384464263916, "cost": [4.352e-06, 3.651e-06, 3.435e-06, 3.442e-06, 3.428e-06, 3.451e-06, 3.413e-06, 3.428e-06, 3.433e-06, 3.461e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest6.exe __orio_perftest6.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest6.exe  
+(run 6) | 2022-11-26 20:38:20.505054 | {"run": 6, "coordinate": [13], "perf_params": {"UF": 14}, "transform_time": 0.06602859497070312, "compile_time": 0.05162215232849121, "cost": [4.35e-06, 3.816e-06, 3.62e-06, 3.705e-06, 3.61e-06, 3.613e-06, 3.596e-06, 3.693e-06, 3.671e-06, 3.643e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest7.exe __orio_perftest7.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest7.exe  
+(run 7) | 2022-11-26 20:38:20.665355 | {"run": 7, "coordinate": [31], "perf_params": {"UF": 32}, "transform_time": 0.08468031883239746, "compile_time": 0.07209277153015137, "cost": [5.221e-06, 4.318e-06, 4.05e-06, 4.038e-06, 4.052e-06, 4.087e-06, 4.045e-06, 4.031e-06, 4.025e-06, 4.082e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest8.exe __orio_perftest8.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest8.exe  
+(run 8) | 2022-11-26 20:38:20.889198 | {"run": 8, "coordinate": [30], "perf_params": {"UF": 31}, "transform_time": 0.1390385627746582, "compile_time": 0.08023905754089355, "cost": [4.991e-06, 4.16e-06, 3.989e-06, 4.025e-06, 4.09e-06, 4.021e-06, 4.029e-06, 3.991e-06, 4.064e-06, 4.003e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest9.exe __orio_perftest9.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest9.exe  
+(run 9) | 2022-11-26 20:38:21.050342 | {"run": 9, "coordinate": [24], "perf_params": {"UF": 25}, "transform_time": 0.10167169570922852, "compile_time": 0.0559694766998291, "cost": [6.761e-06, 6.873e-06, 6.162e-06, 6.04e-06, 6.005e-06, 5.984e-06, 5.973e-06, 6.189e-06, 6.4e-06, 6.34e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest10.exe __orio_perftest10.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest10.exe  
+(run 10) | 2022-11-26 20:38:21.167918 | {"run": 10, "coordinate": [8], "perf_params": {"UF": 9}, "transform_time": 0.06474828720092773, "compile_time": 0.049213409423828125, "cost": [4.115e-06, 3.518e-06, 3.398e-06, 3.457e-06, 3.371e-06, 3.412e-06, 3.428e-06, 3.488e-06, 6.204e-06, 5.145e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest11.exe __orio_perftest11.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest11.exe  
+(run 11) | 2022-11-26 20:38:21.316820 | {"run": 11, "coordinate": [28], "perf_params": {"UF": 29}, "transform_time": 0.08314061164855957, "compile_time": 0.06183004379272461, "cost": [4.905e-06, 4.103e-06, 3.912e-06, 3.946e-06, 3.889e-06, 3.905e-06, 1.2347e-05, 3.923e-06, 3.907e-06, 3.871e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest12.exe __orio_perftest12.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest12.exe  
+(run 12) | 2022-11-26 20:38:21.456673 | {"run": 12, "coordinate": [4], "perf_params": {"UF": 5}, "transform_time": 0.08675551414489746, "compile_time": 0.049560546875, "cost": [4.302e-06, 3.654e-06, 3.487e-06, 3.484e-06, 3.56e-06, 3.496e-06, 3.489e-06, 3.475e-06, 3.534e-06, 3.479e-06]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest13.exe __orio_perftest13.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest13.exe  
+(run 13) | 2022-11-26 20:38:21.572836 | {"run": 13, "coordinate": [6], "perf_params": {"UF": 7}, "transform_time": 0.0637657642364502, "compile_time": 0.04901528358459473, "cost": [4.155e-06, 3.502e-06, 3.388e-06, 3.41e-06, 3.411e-06, 3.378e-06, 3.366e-06, 3.393e-06, 3.345e-06, 3.379e-06]}
+Best performance = 3.3455999999999998e-06
+Best coordinate = [0]
+----- end random search -----
+----- begin random search summary -----
+ total completed runs: 13
+ total successful runs: 13
+ total failed runs: 0
+ speedup: 1.0
+ found at: 1
+----- end random search summary -----
+----- begin summary -----
+ best coordinate: [0]={'UF': 1}, cost=3.345600e-06, transfer_time=inf, inputs=[('N', 1000)], search_space=3.200e+01, search_time=1.88, runs=13
+----- end summary -----
+
+----- begin random search -----
+Size of search space: 14
+Unevaluated coordinates: 14
+Unevaluated parameters: 14
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest14.exe __orio_perftest14.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest14.exe  
+(run 1) | 2022-11-26 20:38:21.742015 | {"run": 1, "coordinate": [0], "perf_params": {"UF": 1}, "transform_time": 0.0637521743774414, "compile_time": 0.047757625579833984, "cost": [4.0789e-05, 4.0257e-05, 4.0146e-05, 6.2645e-05, 4.013e-05, 4.0071e-05, 4.0085e-05, 4.0149e-05, 4.011e-05, 4.0088e-05]}
+>>>> best coordinate found: [0], cost: 4.244700e-05
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest15.exe __orio_perftest15.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest15.exe  
+(run 2) | 2022-11-26 20:38:21.916244 | {"run": 2, "coordinate": [27], "perf_params": {"UF": 28}, "transform_time": 0.10186767578125, "compile_time": 0.06672906875610352, "cost": [4.5404e-05, 4.039e-05, 4.0197e-05, 4.4202e-05, 4.0183e-05, 4.011e-05, 4.506e-05, 4.0389e-05, 4.0174e-05, 4.014e-05]}
+>>>> best coordinate found: [27], cost: 4.162490e-05
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest16.exe __orio_perftest16.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest16.exe  
+(run 3) | 2022-11-26 20:38:22.092470 | {"run": 3, "coordinate": [16], "perf_params": {"UF": 17}, "transform_time": 0.11475110054016113, "compile_time": 0.05640411376953125, "cost": [4.2919e-05, 4.0212e-05, 3.8906e-05, 3.8866e-05, 4.6388e-05, 4.943e-05, 5.8228e-05, 7.2245e-05, 7.2902e-05, 7.276e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest17.exe __orio_perftest17.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest17.exe  
+(run 4) | 2022-11-26 20:38:22.228274 | {"run": 4, "coordinate": [17], "perf_params": {"UF": 18}, "transform_time": 0.07245993614196777, "compile_time": 0.05800819396972656, "cost": [4.1293e-05, 4.0253e-05, 3.9856e-05, 3.9945e-05, 3.9795e-05, 3.9833e-05, 3.9884e-05, 3.9951e-05, 3.9933e-05, 6.6119e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest18.exe __orio_perftest18.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest18.exe  
+(run 5) | 2022-11-26 20:38:22.342721 | {"run": 5, "coordinate": [1], "perf_params": {"UF": 2}, "transform_time": 0.05861234664916992, "compile_time": 0.050604820251464844, "cost": [6.8912e-05, 5.3366e-05, 3.8656e-05, 3.8653e-05, 4.8934e-05, 5.1861e-05, 4.9576e-05, 4.4762e-05, 5.6728e-05, 5.357e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest19.exe __orio_perftest19.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest19.exe  
+(run 6) | 2022-11-26 20:38:22.569190 | {"run": 6, "coordinate": [13], "perf_params": {"UF": 14}, "transform_time": 0.14541888236999512, "compile_time": 0.07381200790405273, "cost": [4.7576e-05, 4.6163e-05, 4.2345e-05, 5.4719e-05, 4.0924e-05, 4.0725e-05, 4.2049e-05, 4.0152e-05, 4.6928e-05, 4.021e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest20.exe __orio_perftest20.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest20.exe  
+(run 7) | 2022-11-26 20:38:22.730608 | {"run": 7, "coordinate": [31], "perf_params": {"UF": 32}, "transform_time": 0.09874463081359863, "compile_time": 0.058542490005493164, "cost": [4.0293e-05, 3.9103e-05, 3.8964e-05, 3.8897e-05, 3.9183e-05, 5.2039e-05, 5.4954e-05, 5.4753e-05, 4.0466e-05, 4.7656e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest21.exe __orio_perftest21.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest21.exe  
+(run 8) | 2022-11-26 20:38:22.875477 | {"run": 8, "coordinate": [30], "perf_params": {"UF": 31}, "transform_time": 0.08095574378967285, "compile_time": 0.060288429260253906, "cost": [4.0704e-05, 3.9268e-05, 4.4036e-05, 3.8991e-05, 3.8967e-05, 3.9052e-05, 4.362e-05, 3.9017e-05, 3.8949e-05, 4.194e-05]}
+>>>> best coordinate found: [30], cost: 4.045440e-05
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest22.exe __orio_perftest22.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest22.exe  
+(run 9) | 2022-11-26 20:38:23.008429 | {"run": 9, "coordinate": [24], "perf_params": {"UF": 25}, "transform_time": 0.07260274887084961, "compile_time": 0.05648040771484375, "cost": [4.0169e-05, 3.9268e-05, 4.2488e-05, 3.9025e-05, 3.9038e-05, 5.8287e-05, 4.8161e-05, 4.797e-05, 4.8093e-05, 4.814e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest23.exe __orio_perftest23.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest23.exe  
+(run 10) | 2022-11-26 20:38:23.128458 | {"run": 10, "coordinate": [8], "perf_params": {"UF": 9}, "transform_time": 0.06592273712158203, "compile_time": 0.050203800201416016, "cost": [4.0636e-05, 4.0086e-05, 4.9608e-05, 4.0091e-05, 3.9954e-05, 4.0105e-05, 3.987e-05, 3.9883e-05, 4.007e-05, 4.0068e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest24.exe __orio_perftest24.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest24.exe  
+(run 11) | 2022-11-26 20:38:23.270848 | {"run": 11, "coordinate": [28], "perf_params": {"UF": 29}, "transform_time": 0.07972526550292969, "compile_time": 0.058850765228271484, "cost": [4.0364e-05, 3.9255e-05, 3.9016e-05, 3.8959e-05, 4.3829e-05, 3.9063e-05, 3.8996e-05, 3.8937e-05, 4.3672e-05, 3.9e-05]}
+>>>> best coordinate found: [28], cost: 4.010910e-05
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest25.exe __orio_perftest25.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest25.exe  
+(run 12) | 2022-11-26 20:38:23.388340 | {"run": 12, "coordinate": [4], "perf_params": {"UF": 5}, "transform_time": 0.06719112396240234, "compile_time": 0.04663586616516113, "cost": [4.2046e-05, 4.0895e-05, 4.0759e-05, 4.0662e-05, 4.0665e-05, 4.0704e-05, 5.5179e-05, 4.0587e-05, 4.0725e-05, 4.0604e-05]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest26.exe __orio_perftest26.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest26.exe  
+(run 13) | 2022-11-26 20:38:23.502735 | {"run": 13, "coordinate": [6], "perf_params": {"UF": 7}, "transform_time": 0.060350656509399414, "compile_time": 0.049150705337524414, "cost": [3.9894e-05, 3.984e-05, 3.9176e-05, 3.9167e-05, 3.9238e-05, 3.93e-05, 3.9195e-05, 3.9224e-05, 3.9216e-05, 3.9261e-05]}
+>>>> best coordinate found: [6], cost: 3.935110e-05
+Best performance = 3.935110000000001e-05
+Best coordinate = [6]
+----- end random search -----
+----- begin random search summary -----
+ total completed runs: 13
+ total successful runs: 13
+ total failed runs: 0
+ speedup: 1.0786737854850306
+ found at: 13
+----- end random search summary -----
+----- begin summary -----
+ best coordinate: [6]={'UF': 7}, cost=3.935110e-05, transfer_time=inf, inputs=[('N', 10000)], search_space=3.200e+01, search_time=1.88, runs=13
+----- end summary -----
+
+----- begin random search -----
+Size of search space: 14
+Unevaluated coordinates: 14
+Unevaluated parameters: 14
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest27.exe __orio_perftest27.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest27.exe  
+(run 1) | 2022-11-26 20:38:23.690342 | {"run": 1, "coordinate": [0], "perf_params": {"UF": 1}, "transform_time": 0.056642770767211914, "compile_time": 0.05426955223083496, "cost": [0.000974343, 0.000736182, 0.000843799, 0.000649658, 0.000498296, 0.000514186, 0.000494978, 0.000696449, 0.000700143, 0.000447615]}
+>>>> best coordinate found: [0], cost: 6.555649e-04
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest28.exe __orio_perftest28.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest28.exe  
+(run 2) | 2022-11-26 20:38:23.865387 | {"run": 2, "coordinate": [27], "perf_params": {"UF": 28}, "transform_time": 0.10054159164428711, "compile_time": 0.06432771682739258, "cost": [0.000447337, 0.000452331, 0.000438508, 0.000409549, 0.000403541, 0.000400476, 0.000436445, 0.00054334, 0.000505137, 0.00051331]}
+>>>> best coordinate found: [27], cost: 4.549974e-04
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest29.exe __orio_perftest29.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest29.exe  
+(run 3) | 2022-11-26 20:38:24.010632 | {"run": 3, "coordinate": [16], "perf_params": {"UF": 17}, "transform_time": 0.07583498954772949, "compile_time": 0.05776333808898926, "cost": [0.000460731, 0.000460801, 0.000421036, 0.000436384, 0.000426213, 0.000426782, 0.000438671, 0.000419808, 0.00041735, 0.000435679]}
+>>>> best coordinate found: [16], cost: 4.343455e-04
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest30.exe __orio_perftest30.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest30.exe  
+(run 4) | 2022-11-26 20:38:24.163067 | {"run": 4, "coordinate": [17], "perf_params": {"UF": 18}, "transform_time": 0.08506321907043457, "compile_time": 0.057303428649902344, "cost": [0.00044969, 0.000426258, 0.000396846, 0.000387755, 0.000407893, 0.000393234, 0.000390802, 0.000525556, 0.000455909, 0.000418441]}
+>>>> best coordinate found: [17], cost: 4.252384e-04
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest31.exe __orio_perftest31.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest31.exe  
+(run 5) | 2022-11-26 20:38:24.277037 | {"run": 5, "coordinate": [1], "perf_params": {"UF": 2}, "transform_time": 0.057097434997558594, "compile_time": 0.04766035079956055, "cost": [0.000459066, 0.000426349, 0.000418969, 0.000393128, 0.000394199, 0.000390252, 0.000389168, 0.00039307, 0.00039644, 0.000391586]}
+>>>> best coordinate found: [1], cost: 4.052227e-04
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest32.exe __orio_perftest32.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest32.exe  
+(run 6) | 2022-11-26 20:38:24.407238 | {"run": 6, "coordinate": [13], "perf_params": {"UF": 14}, "transform_time": 0.06635165214538574, "compile_time": 0.053322792053222656, "cost": [0.000451057, 0.000454435, 0.000415417, 0.00043907, 0.000424326, 0.00042264, 0.00040985, 0.000414006, 0.000403858, 0.000404456]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest33.exe __orio_perftest33.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest33.exe  
+(run 7) | 2022-11-26 20:38:24.585897 | {"run": 7, "coordinate": [31], "perf_params": {"UF": 32}, "transform_time": 0.10644984245300293, "compile_time": 0.0617673397064209, "cost": [0.000485571, 0.000469286, 0.000482083, 0.000408567, 0.000422231, 0.000404463, 0.000467913, 0.000588878, 0.000545173, 0.000441768]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest34.exe __orio_perftest34.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest34.exe  
+(run 8) | 2022-11-26 20:38:24.762983 | {"run": 8, "coordinate": [30], "perf_params": {"UF": 31}, "transform_time": 0.08703279495239258, "compile_time": 0.0704507827758789, "cost": [0.000884205, 0.00104034, 0.00106651, 0.00112311, 0.000632289, 0.0010001, 0.00190257, 0.000995179, 0.000675238, 0.000709276]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest35.exe __orio_perftest35.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest35.exe  
+(run 9) | 2022-11-26 20:38:24.925828 | {"run": 9, "coordinate": [24], "perf_params": {"UF": 25}, "transform_time": 0.08820796012878418, "compile_time": 0.06253647804260254, "cost": [0.000541925, 0.00074824, 0.000551342, 0.000417179, 0.00039954, 0.000396111, 0.000414673, 0.000396683, 0.000402433, 0.000395368]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest36.exe __orio_perftest36.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest36.exe  
+(run 10) | 2022-11-26 20:38:25.079553 | {"run": 10, "coordinate": [8], "perf_params": {"UF": 9}, "transform_time": 0.08611226081848145, "compile_time": 0.057033538818359375, "cost": [0.000447535, 0.000458123, 0.00042732, 0.000410727, 0.000400444, 0.000402001, 0.000399234, 0.000400312, 0.000406763, 0.000404704]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest37.exe __orio_perftest37.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest37.exe  
+(run 11) | 2022-11-26 20:38:25.294064 | {"run": 11, "coordinate": [28], "perf_params": {"UF": 29}, "transform_time": 0.09086942672729492, "compile_time": 0.10480666160583496, "cost": [0.0015546, 0.00134123, 0.00139425, 0.00115332, 0.000958238, 0.00100803, 0.000625991, 0.000624895, 0.000594485, 0.000582307]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest38.exe __orio_perftest38.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest38.exe  
+(run 12) | 2022-11-26 20:38:25.457647 | {"run": 12, "coordinate": [4], "perf_params": {"UF": 5}, "transform_time": 0.08636784553527832, "compile_time": 0.06566858291625977, "cost": [0.000498047, 0.000478255, 0.000476111, 0.000463436, 0.000532164, 0.00045758, 0.000463226, 0.000586315, 0.000455635, 0.000440387]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest39.exe __orio_perftest39.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest39.exe  
+(run 13) | 2022-11-26 20:38:25.586605 | {"run": 13, "coordinate": [6], "perf_params": {"UF": 7}, "transform_time": 0.06596612930297852, "compile_time": 0.052290916442871094, "cost": [0.000502305, 0.000457759, 0.000496971, 0.000466273, 0.000577357, 0.000602978, 0.000524103, 0.000475324, 0.000424427, 0.000414896]}
+Best performance = 0.0004052227
+Best coordinate = [1]
+----- end random search -----
+----- begin random search summary -----
+ total completed runs: 13
+ total successful runs: 13
+ total failed runs: 0
+ speedup: 1.617789181109548
+ found at: 5
+----- end random search summary -----
+----- begin summary -----
+ best coordinate: [1]={'UF': 2}, cost=4.052227e-04, transfer_time=inf, inputs=[('N', 100000)], search_space=3.200e+01, search_time=2.02, runs=13
+----- end summary -----
+
+----- begin random search -----
+Size of search space: 14
+Unevaluated coordinates: 14
+Unevaluated parameters: 14
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest40.exe __orio_perftest40.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest40.exe  
+(run 1) | 2022-11-26 20:38:25.787240 | {"run": 1, "coordinate": [0], "perf_params": {"UF": 1}, "transform_time": 0.0536952018737793, "compile_time": 0.046906232833862305, "cost": [0.00317646, 0.00272656, 0.0028285, 0.0023633, 0.00237559, 0.00232017, 0.00233938, 0.00247999, 0.00246473, 0.00281127]}
+>>>> best coordinate found: [0], cost: 2.588595e-03
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest41.exe __orio_perftest41.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest41.exe  
+(run 2) | 2022-11-26 20:38:25.976998 | {"run": 2, "coordinate": [27], "perf_params": {"UF": 28}, "transform_time": 0.09363269805908203, "compile_time": 0.058495283126831055, "cost": [0.00241291, 0.00241808, 0.00230561, 0.0022731, 0.00241799, 0.00228934, 0.00244307, 0.0024318, 0.00230755, 0.00226962]}
+>>>> best coordinate found: [27], cost: 2.356907e-03
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest42.exe __orio_perftest42.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest42.exe  
+(run 3) | 2022-11-26 20:38:26.156198 | {"run": 3, "coordinate": [16], "perf_params": {"UF": 17}, "transform_time": 0.06788277626037598, "compile_time": 0.06310677528381348, "cost": [0.00275277, 0.00279982, 0.00299886, 0.00335232, 0.00340704, 0.00412584, 0.00258648, 0.00301159, 0.00263983, 0.00372354]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest43.exe __orio_perftest43.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest43.exe  
+(run 4) | 2022-11-26 20:38:26.330256 | {"run": 4, "coordinate": [17], "perf_params": {"UF": 18}, "transform_time": 0.07007455825805664, "compile_time": 0.05953717231750488, "cost": [0.00395566, 0.00259989, 0.00283932, 0.00277169, 0.00280565, 0.0038468, 0.00394238, 0.00252913, 0.00233936, 0.00232065]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest44.exe __orio_perftest44.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest44.exe  
+(run 5) | 2022-11-26 20:38:26.508229 | {"run": 5, "coordinate": [1], "perf_params": {"UF": 2}, "transform_time": 0.07713842391967773, "compile_time": 0.05374622344970703, "cost": [0.00258716, 0.00266321, 0.00448418, 0.00385346, 0.00326628, 0.00243482, 0.0028627, 0.00334072, 0.00313899, 0.00273168]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest45.exe __orio_perftest45.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest45.exe  
+(run 6) | 2022-11-26 20:38:26.677882 | {"run": 6, "coordinate": [13], "perf_params": {"UF": 14}, "transform_time": 0.07250595092773438, "compile_time": 0.05587196350097656, "cost": [0.00340913, 0.00236524, 0.00240819, 0.00254578, 0.00246111, 0.00295485, 0.00360183, 0.0023801, 0.0023675, 0.00235563]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest46.exe __orio_perftest46.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest46.exe  
+(run 7) | 2022-11-26 20:38:26.865231 | {"run": 7, "coordinate": [31], "perf_params": {"UF": 32}, "transform_time": 0.08894205093383789, "compile_time": 0.05991697311401367, "cost": [0.00233815, 0.00241251, 0.00245246, 0.00249539, 0.00281093, 0.00234236, 0.0023167, 0.00227885, 0.002304, 0.00243223]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest47.exe __orio_perftest47.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest47.exe  
+(run 8) | 2022-11-26 20:38:27.076400 | {"run": 8, "coordinate": [30], "perf_params": {"UF": 31}, "transform_time": 0.09998631477355957, "compile_time": 0.06740784645080566, "cost": [0.00329111, 0.00331955, 0.00236032, 0.00237495, 0.00240665, 0.002544, 0.00350011, 0.00421229, 0.00257252, 0.00240649]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest48.exe __orio_perftest48.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest48.exe  
+(run 9) | 2022-11-26 20:38:27.258734 | {"run": 9, "coordinate": [24], "perf_params": {"UF": 25}, "transform_time": 0.08386921882629395, "compile_time": 0.059298038482666016, "cost": [0.00284438, 0.00286262, 0.00230991, 0.00229393, 0.0022934, 0.00245423, 0.00252011, 0.00269207, 0.00239792, 0.00235338]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest49.exe __orio_perftest49.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest49.exe  
+(run 10) | 2022-11-26 20:38:27.413744 | {"run": 10, "coordinate": [8], "perf_params": {"UF": 9}, "transform_time": 0.06404566764831543, "compile_time": 0.051767826080322266, "cost": [0.00241404, 0.00239308, 0.00226254, 0.00251239, 0.00293684, 0.00257571, 0.00234671, 0.00229832, 0.0023311, 0.00241843]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest50.exe __orio_perftest50.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest50.exe  
+(run 11) | 2022-11-26 20:38:27.611896 | {"run": 11, "coordinate": [28], "perf_params": {"UF": 29}, "transform_time": 0.08944416046142578, "compile_time": 0.0674278736114502, "cost": [0.00402003, 0.00246072, 0.00246794, 0.0025629, 0.00304798, 0.00296952, 0.00236891, 0.00237856, 0.00236959, 0.00243475]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest51.exe __orio_perftest51.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest51.exe  
+(run 12) | 2022-11-26 20:38:27.761685 | {"run": 12, "coordinate": [4], "perf_params": {"UF": 5}, "transform_time": 0.059302568435668945, "compile_time": 0.0490567684173584, "cost": [0.00288659, 0.0024402, 0.00245639, 0.00256883, 0.0024472, 0.00240083, 0.00294838, 0.00262415, 0.00277152, 0.00381628]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest52.exe __orio_perftest52.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest52.exe  
+(run 13) | 2022-11-26 20:38:27.932521 | {"run": 13, "coordinate": [6], "perf_params": {"UF": 7}, "transform_time": 0.0819087028503418, "compile_time": 0.04955697059631348, "cost": [0.00233348, 0.00227645, 0.00285114, 0.00244183, 0.00269452, 0.0023374, 0.00231047, 0.00230095, 0.00228805, 0.00276475]}
+Best performance = 0.0023569069999999997
+Best coordinate = [27]
+----- end random search -----
+----- begin random search summary -----
+ total completed runs: 13
+ total successful runs: 13
+ total failed runs: 0
+ speedup: 1.0983017149170504
+ found at: 2
+----- end random search summary -----
+----- begin summary -----
+ best coordinate: [27]={'UF': 28}, cost=2.356907e-03, transfer_time=inf, inputs=[('N', 500000)], search_space=3.200e+01, search_time=2.29, runs=13
+----- end summary -----
+
+----- begin random search -----
+Size of search space: 14
+Unevaluated coordinates: 14
+Unevaluated parameters: 14
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest53.exe __orio_perftest53.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest53.exe  
+(run 1) | 2022-11-26 20:38:29.020359 | {"run": 1, "coordinate": [0], "perf_params": {"UF": 1}, "transform_time": 0.052405357360839844, "compile_time": 0.04972577095031738, "cost": [0.0498683, 0.0712741, 0.0798499, 0.0669454, 0.074482, 0.0618495, 0.0587019, 0.0555044, 0.0598469, 0.0546467]}
+>>>> best coordinate found: [0], cost: 6.329691e-02
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest54.exe __orio_perftest54.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest54.exe  
+(run 2) | 2022-11-26 20:38:30.173472 | {"run": 2, "coordinate": [27], "perf_params": {"UF": 28}, "transform_time": 0.08757209777832031, "compile_time": 0.06290745735168457, "cost": [0.102511, 0.107756, 0.0986318, 0.0956234, 0.0648042, 0.0556048, 0.0679966, 0.0563747, 0.0540432, 0.0540481]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest55.exe __orio_perftest55.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest55.exe  
+(run 3) | 2022-11-26 20:38:31.218355 | {"run": 3, "coordinate": [16], "perf_params": {"UF": 17}, "transform_time": 0.07420682907104492, "compile_time": 0.06392455101013184, "cost": [0.0566582, 0.0620257, 0.0856116, 0.0719242, 0.0630697, 0.0657428, 0.0664594, 0.0624942, 0.0585494, 0.0520688]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest56.exe __orio_perftest56.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest56.exe  
+(run 4) | 2022-11-26 20:38:32.246217 | {"run": 4, "coordinate": [17], "perf_params": {"UF": 18}, "transform_time": 0.08533859252929688, "compile_time": 0.05614924430847168, "cost": [0.0589982, 0.0607775, 0.0782293, 0.0713516, 0.0732447, 0.0585524, 0.0574024, 0.0578295, 0.0546964, 0.0543853]}
+>>>> best coordinate found: [17], cost: 6.254673e-02
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest57.exe __orio_perftest57.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest57.exe  
+(run 5) | 2022-11-26 20:38:33.529974 | {"run": 5, "coordinate": [1], "perf_params": {"UF": 2}, "transform_time": 0.06560945510864258, "compile_time": 0.07132840156555176, "cost": [0.0914256, 0.118766, 0.119647, 0.116916, 0.0778917, 0.0641661, 0.0541112, 0.0519913, 0.0657661, 0.0867302]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest58.exe __orio_perftest58.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest58.exe  
+(run 6) | 2022-11-26 20:38:34.892172 | {"run": 6, "coordinate": [13], "perf_params": {"UF": 14}, "transform_time": 0.11567378044128418, "compile_time": 0.094757080078125, "cost": [0.0984038, 0.104771, 0.110397, 0.108241, 0.0808114, 0.0612305, 0.0681328, 0.0679515, 0.0677885, 0.0571505]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest59.exe __orio_perftest59.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest59.exe  
+(run 7) | 2022-11-26 20:38:36.029567 | {"run": 7, "coordinate": [31], "perf_params": {"UF": 32}, "transform_time": 0.1551225185394287, "compile_time": 0.08733201026916504, "cost": [0.072433, 0.0709147, 0.0637828, 0.0581806, 0.0568562, 0.0649618, 0.0557967, 0.0551273, 0.0549993, 0.0598225]}
+>>>> best coordinate found: [31], cost: 6.128749e-02
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest60.exe __orio_perftest60.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest60.exe  
+(run 8) | 2022-11-26 20:38:37.234884 | {"run": 8, "coordinate": [30], "perf_params": {"UF": 31}, "transform_time": 0.09511160850524902, "compile_time": 0.0984351634979248, "cost": [0.0853783, 0.103406, 0.0876565, 0.0607552, 0.0552042, 0.0660908, 0.0652604, 0.0590222, 0.0539935, 0.0559745]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest61.exe __orio_perftest61.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest61.exe  
+(run 9) | 2022-11-26 20:38:38.271598 | {"run": 9, "coordinate": [24], "perf_params": {"UF": 25}, "transform_time": 0.08097481727600098, "compile_time": 0.060742855072021484, "cost": [0.0776323, 0.070047, 0.0601711, 0.0765114, 0.0633045, 0.057141, 0.0653636, 0.0629818, 0.0731869, 0.0637214]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest62.exe __orio_perftest62.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest62.exe  
+(run 10) | 2022-11-26 20:38:39.341519 | {"run": 10, "coordinate": [8], "perf_params": {"UF": 9}, "transform_time": 0.08672428131103516, "compile_time": 0.05559539794921875, "cost": [0.069153, 0.0728368, 0.0921001, 0.0869309, 0.0603105, 0.0548746, 0.0571125, 0.0598587, 0.0607995, 0.0516574]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest63.exe __orio_perftest63.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest63.exe  
+(run 11) | 2022-11-26 20:38:40.371110 | {"run": 11, "coordinate": [28], "perf_params": {"UF": 29}, "transform_time": 0.08776330947875977, "compile_time": 0.058563947677612305, "cost": [0.0589251, 0.0578743, 0.0650515, 0.0677087, 0.0707657, 0.0601596, 0.06263, 0.0608068, 0.0684101, 0.0607992]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest64.exe __orio_perftest64.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest64.exe  
+(run 12) | 2022-11-26 20:38:41.378508 | {"run": 12, "coordinate": [4], "perf_params": {"UF": 5}, "transform_time": 0.07770872116088867, "compile_time": 0.055763959884643555, "cost": [0.0581883, 0.0572001, 0.0553419, 0.0602255, 0.0590898, 0.0639999, 0.0595304, 0.0571893, 0.0607523, 0.0857473]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest65.exe __orio_perftest65.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest65.exe  
+(run 13) | 2022-11-26 20:38:42.405352 | {"run": 13, "coordinate": [6], "perf_params": {"UF": 7}, "transform_time": 0.06813883781433105, "compile_time": 0.05533242225646973, "cost": [0.057316, 0.0600269, 0.0556468, 0.0698474, 0.0651243, 0.0622302, 0.0799076, 0.0703328, 0.0630434, 0.0743529]}
+Best performance = 0.06128749
+Best coordinate = [31]
+----- end random search -----
+----- begin random search summary -----
+ total completed runs: 13
+ total successful runs: 13
+ total failed runs: 0
+ speedup: 1.0327867889515465
+ found at: 7
+----- end random search summary -----
+----- begin summary -----
+ best coordinate: [31]={'UF': 32}, cost=6.128749e-02, transfer_time=inf, inputs=[('N', 10000000)], search_space=3.200e+01, search_time=14.39, runs=13
+----- end summary -----
+
+----- begin random search -----
+Size of search space: 14
+Unevaluated coordinates: 14
+Unevaluated parameters: 14
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest66.exe __orio_perftest66.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest66.exe  
+(run 1) | 2022-11-26 20:38:50.829629 | {"run": 1, "coordinate": [0], "perf_params": {"UF": 1}, "transform_time": 0.06738734245300293, "compile_time": 0.04573798179626465, "cost": [0.552603, 0.545209, 0.558605, 0.560872, 0.541327, 0.566048, 0.707651, 0.651465, 0.53132, 0.56558]}
+>>>> best coordinate found: [0], cost: 5.780680e-01
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest67.exe __orio_perftest67.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest67.exe  
+(run 2) | 2022-11-26 20:38:59.475790 | {"run": 2, "coordinate": [27], "perf_params": {"UF": 28}, "transform_time": 0.09292936325073242, "compile_time": 0.0629584789276123, "cost": [0.675669, 0.648611, 0.617614, 0.579488, 0.585522, 0.5509, 0.69527, 0.660427, 0.575822, 0.530895]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest68.exe __orio_perftest68.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest68.exe  
+(run 3) | 2022-11-26 20:39:07.197621 | {"run": 3, "coordinate": [16], "perf_params": {"UF": 17}, "transform_time": 0.08274650573730469, "compile_time": 0.0573272705078125, "cost": [0.5361, 0.53108, 0.537813, 0.544037, 0.513915, 0.530596, 0.520959, 0.510822, 0.539441, 0.538459]}
+>>>> best coordinate found: [16], cost: 5.303222e-01
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest69.exe __orio_perftest69.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest69.exe  
+(run 4) | 2022-11-26 20:39:15.080126 | {"run": 4, "coordinate": [17], "perf_params": {"UF": 18}, "transform_time": 0.08511805534362793, "compile_time": 0.0664372444152832, "cost": [0.517162, 0.511799, 0.510388, 0.506501, 0.510181, 0.514538, 0.605141, 0.6123, 0.549529, 0.527873]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest70.exe __orio_perftest70.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest70.exe  
+(run 5) | 2022-11-26 20:39:23.674990 | {"run": 5, "coordinate": [1], "perf_params": {"UF": 2}, "transform_time": 0.0803227424621582, "compile_time": 0.07178282737731934, "cost": [0.536477, 0.587445, 0.624989, 0.611715, 0.587664, 0.578493, 0.66349, 0.623265, 0.597424, 0.585035]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest71.exe __orio_perftest71.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest71.exe  
+(run 6) | 2022-11-26 20:39:31.839725 | {"run": 6, "coordinate": [13], "perf_params": {"UF": 14}, "transform_time": 0.0771174430847168, "compile_time": 0.05242753028869629, "cost": [0.559621, 0.536734, 0.564327, 0.534497, 0.553233, 0.544941, 0.585339, 0.554715, 0.600458, 0.546692]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest72.exe __orio_perftest72.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest72.exe  
+(run 7) | 2022-11-26 20:39:40.556472 | {"run": 7, "coordinate": [31], "perf_params": {"UF": 32}, "transform_time": 0.11547994613647461, "compile_time": 0.07027459144592285, "cost": [0.606403, 0.590596, 0.624522, 0.563087, 0.604463, 0.656299, 0.590931, 0.558169, 0.645664, 0.604821]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest73.exe __orio_perftest73.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest73.exe  
+(run 8) | 2022-11-26 20:39:49.527572 | {"run": 8, "coordinate": [30], "perf_params": {"UF": 31}, "transform_time": 0.09577059745788574, "compile_time": 0.06607627868652344, "cost": [0.562605, 0.567466, 0.566818, 0.718891, 0.589277, 0.636872, 0.622419, 0.665879, 0.720234, 0.682797]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest74.exe __orio_perftest74.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest74.exe  
+(run 9) | 2022-11-26 20:39:59.393178 | {"run": 9, "coordinate": [24], "perf_params": {"UF": 25}, "transform_time": 0.1068720817565918, "compile_time": 0.06992483139038086, "cost": [0.708935, 0.762961, 0.680423, 0.647878, 0.682826, 0.781669, 0.642245, 0.644883, 0.638673, 0.749967]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest75.exe __orio_perftest75.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest75.exe  
+(run 10) | 2022-11-26 20:40:08.699036 | {"run": 10, "coordinate": [8], "perf_params": {"UF": 9}, "transform_time": 0.08710503578186035, "compile_time": 0.05839061737060547, "cost": [0.683514, 0.682016, 0.685182, 0.656107, 0.613489, 0.629991, 0.641705, 0.618698, 0.624246, 0.636802]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest76.exe __orio_perftest76.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest76.exe  
+(run 11) | 2022-11-26 20:40:17.986863 | {"run": 11, "coordinate": [28], "perf_params": {"UF": 29}, "transform_time": 0.09986662864685059, "compile_time": 0.08034825325012207, "cost": [0.573322, 0.610496, 0.717895, 0.629843, 0.680653, 0.62792, 0.674488, 0.611442, 0.613504, 0.647528]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest77.exe __orio_perftest77.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest77.exe  
+(run 12) | 2022-11-26 20:40:26.897331 | {"run": 12, "coordinate": [4], "perf_params": {"UF": 5}, "transform_time": 0.09820938110351562, "compile_time": 0.06796646118164062, "cost": [0.665435, 0.619985, 0.661019, 0.649016, 0.608923, 0.588571, 0.570936, 0.58055, 0.568607, 0.559584]}
+.
+ building test:
+	gcc -O0 -mcmodel=large  -DORIO_REPS=10 -o __orio_perftest78.exe __orio_perftest78.c timer_cpu.o 
+ running test:
+	 ./__orio_perftest78.exe  
+(run 13) | 2022-11-26 20:40:34.791595 | {"run": 13, "coordinate": [6], "perf_params": {"UF": 7}, "transform_time": 0.07299351692199707, "compile_time": 0.05470538139343262, "cost": [0.541434, 0.54644, 0.53699, 0.504918, 0.520011, 0.506726, 0.502324, 0.563667, 0.630285, 0.533659]}
+Best performance = 0.5303222
+Best coordinate = [16]
+----- end random search -----
+----- begin random search summary -----
+ total completed runs: 13
+ total successful runs: 13
+ total failed runs: 0
+ speedup: 1.090031682626147
+ found at: 3
+----- end random search summary -----
+----- begin summary -----
+ best coordinate: [16]={'UF': 17}, cost=5.303222e-01, transfer_time=inf, inputs=[('N', 100000000)], search_space=3.200e+01, search_time=112.29, runs=13
+----- end summary -----
+----- finish optimizations -----
+
+----- begin writing the output file(s) -----
+--> writing output to: _tables_orio.c
+----- finished writing the output file(s) -----
+
+====== END ORIO: hdron-ThinkPad-E152022-11-26_20:40:34 [output: _tables_orio.c, log: tuning_tables_orio.c_418498.log] ======

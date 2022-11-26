@@ -1,0 +1,14 @@
+0 th loop execution time = 0.403601
+1 th loop execution time = 0.434895
+2 th loop execution time = 0.489303
+3 th loop execution time = 0.433082
+4 th loop execution time = 0.441108
+5 th loop execution time = 0.422571
+6 th loop execution time = 0.426609
+7 th loop execution time = 0.456834
+8 th loop execution time = 0.463216
+9 th loop execution time = 0.489834
+
+mean time = 0.4461053
+max time = 0.489834
+min time = 0.403601

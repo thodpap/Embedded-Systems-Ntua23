@@ -1,10 +1,10 @@
 '''
 
-    FIND RESULTS OF INITIAL IMPLEMENTATION
+    FINDS THE RESULTS OF EACH IMPLEMENTATION
 
 '''
 
-def find_initial(file):
+def find_results(file):
 
     f = open(file, 'r')
 
@@ -36,8 +36,3 @@ def find_initial(file):
 
 
     return [mean, max_, min_]
-
-
-if __name__ == "__main__":
-
-    find_initial("../results/results_phods_opt_bx_by.txt")

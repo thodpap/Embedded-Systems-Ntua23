@@ -5,9 +5,6 @@ from scripts.exec_opt_b import run_opt_b
 from scripts.exec_opt_bx_by import run_opt_bx_by
 
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 initial_res = run_initial('./code/phods.c', './code/phods', './results/results_inital.txt')
 

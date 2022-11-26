@@ -40,10 +40,10 @@ column_wise = total.transpose()
 print("results in colums:")
 print(column_wise)
 
-versions = ['Initial', f'Opt B = {b}', f'Opt Bx = {bx}, By = {by}'] # 'Initial' has been removed for visual clarity
+versions = ['Initial', f'Opt B = {b}', f'Opt Bx = {bx}, By = {by}']
 sns.set_theme(style="whitegrid")
 
-df = pd.DataFrame(column_wise) # time 1 has been removed from the list
+df = pd.DataFrame(column_wise)
 df.columns = versions
 
 plt.figure()

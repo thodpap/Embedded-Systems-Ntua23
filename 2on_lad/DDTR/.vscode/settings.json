@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cdsl_queue.h": "c",
+        "cdsl_deque.h": "c"
+    }
+}

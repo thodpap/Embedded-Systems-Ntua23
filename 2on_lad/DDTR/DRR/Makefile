@@ -1,61 +1,33 @@
 
+all: ./Makefile_binaries/drr_sll_sll ./Makefile_binaries/drr_sll_dll ./Makefile_binaries/drr_sll_dyn_arr ./Makefile_binaries/drr_dll_sll ./Makefile_binaries/drr_dll_dll ./Makefile_binaries/drr_dll_dyn_arr ./Makefile_binaries/drr_dyn_arr_sll ./Makefile_binaries/drr_dyn_arr_dll ./Makefile_binaries/drr_dyn_arr_dyn_arr
+
 # EXECUTABLES
-drr_sll_sll: drr_sll_sll.o
-		gcc drr_sll_sll.o -o drr_sll_sll
+./Makefile_binaries/drr_sll_sll: drr_sll_sll.c
+		gcc drr_sll_sll.c -o ./Makefile_binaries/drr_sll_sll -pthread -DSLL_CL -DSLL_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_sll_dll: drr_sll_dll.o
-		gcc drr_sll_dll.o -o drr_sll_dll
+./Makefile_binaries/drr_sll_dll: drr_sll_dll.c
+		gcc drr_sll_dll.c -o ./Makefile_binaries/drr_sll_dll -pthread -DSLL_CL -DDLL_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_sll_dyn_arr: drr_sll_dyn_arr.o
-		gcc drr_sll_dyn_arr.o -o drr_sll_dyn_arr
+./Makefile_binaries/drr_sll_dyn_arr: drr_sll_dyn_arr.c
+		gcc drr_sll_dyn_arr.c -o ./Makefile_binaries/drr_sll_dyn_arr -pthread -DSLL_CL -DDYN_ARR_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_dll_sll: drr_dll_sll.o
-		gcc drr_dll_sll.o -o drr_dll_sll
+./Makefile_binaries/drr_dll_sll: drr_dll_sll.c
+		gcc drr_dll_sll.c -o ./Makefile_binaries/drr_dll_sll -pthread -DDLL_CL -DSLL_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_dll_dll: drr_dll_dll.o
-		gcc drr_dll_dll.o -o drr_dll_dll
+./Makefile_binaries/drr_dll_dll: drr_dll_dll.c
+		gcc drr_dll_dll.c -o ./Makefile_binaries/drr_dll_dll -pthread -DDLL_CL -DDLL_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_dll_dyn_arr: drr_dll_dyn_arr.o
-		gcc drr_dll_dyn_arr.o -o drr_dll_dyn_arr
+./Makefile_binaries/drr_dll_dyn_arr: drr_dll_dyn_arr.c
+		gcc drr_dll_dyn_arr.c -o ./Makefile_binaries/drr_dll_dyn_arr -pthread -DDLL_CL -DDYN_ARR_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_dyn_arr_sll: drr_dyn_arr_sll.o
-		gcc drr_dyn_arr_sll.o -o drr_dyn_arr_sll
+./Makefile_binaries/drr_dyn_arr_sll: drr_dyn_arr_sll.c
+		gcc drr_dyn_arr_sll.c -o ./Makefile_binaries/drr_dyn_arr_sll -pthread -DYN_ARR_CL -DSLL_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_dyn_arr_dll: drr_dyn_arr_dll.o
-		gcc drr_dyn_arr_dll.o -o drr_dyn_arr_dll
+./Makefile_binaries/drr_dyn_arr_dll: drr_dyn_arr_dll.c
+		gcc drr_dyn_arr_dll.c -o ./Makefile_binaries/drr_dyn_arr_dll -pthread -DYN_ARR_CL -DDLL_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
-drr_dyn_arr_dyn_arr: drr_dyn_arr_dyn_arr.o
-		gcc drr_dyn_arr_dyn_arr.o -o drr_dyn_arr_dyn_arr
-
-
-# OBJECT FILES WITH APPROPRIATE FLAGS
-drr_sll_sll.o: drr_sll_sll.c drr_sll_sll.h
-		gcc -c drr_sll_sll.c
-
-drr_sll_dll.o: drr.c
-		gcc -c drr_sll_dll.c
-
-drr_sll_dyn_arr.o: drr.c
-		gcc -c drr_sll_dyn_arr.c
-
-drr_dll_sll.o: drr.c
-		gcc -c drr_dll_sll.c
-
-drr_dll_dll.o: drr.c
-		gcc -c drr_dll_dll.c
-
-drr_dll_dyn_arr.o: drr.c
-		gcc -c drr_dll_dyn_arr.c
-
-drr_dyn_arr_sll.o: drr.c
-		gcc -c drr_dyn_arr_sll.c
-
-drr_dyn_arr_dll.o: drr.c
-		gcc -c drr_dyn_arr_dll.c
-
-drr_dyn_arr_dyn_arr.o: drr.c
-		gcc -c drr_dyn_arr_dyn_arr.c
-
+./Makefile_binaries/drr_dyn_arr_dyn_arr: drr_dyn_arr_dyn_arr.c
+		gcc drr_dyn_arr_dyn_arr.c -o ./Makefile_binaries/drr_dyn_arr_dyn_arr -pthread -DYN_ARR_CL -DDYN_ARR_PK -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
 
 # CLEANS
 clean:

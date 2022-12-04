@@ -1,0 +1,536 @@
+--------------------------------------------------------------------------------
+Command:            ./D_binaries/drr_dyn_arr_dll
+Massif arguments:   (none)
+ms_print arguments: massif.out.35108
+--------------------------------------------------------------------------------
+
+
+    KB
+928.5^                                                                       #
+     |                                                                      @#
+     |                                              @@                   @@:@#
+     |                                              @                   :@@:@#
+     |                                             :@ :         :     :::@@:@#
+     |                                             :@ :    :    ::::@::::@@:@#
+     |                                           @@:@ ::  ::: @:::::@::::@@:@#
+     |                                           @ :@ ::  ::::@:::::@::::@@:@#
+     |                                           @ :@ :::@::::@:::::@::::@@:@#
+     |                                          :@ :@ :::@::::@:::::@::::@@:@#
+     |                                         @:@ :@ :::@::::@:::::@::::@@:@#
+     |                                @    ::::@:@ :@ :::@::::@:::::@::::@@:@#
+     |                                @::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+     |                      @ : ::  ::@::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+     |                      @::@: ::::@::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+     |                    @:@::@: : ::@::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+     |               :::::@:@::@: : ::@::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+     |       ::  :::::::::@:@::@: : ::@::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+     |    :: ::@:::: :::::@:@::@: : ::@::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+     |   ::::::@:::: :::::@:@::@: : ::@::::::: @:@ :@ :::@::::@:::::@::::@@:@#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   35.82
+
+Number of snapshots: 88
+ Detailed snapshots: [9, 19, 21, 22, 25, 31, 39, 41, 43, 44, 48, 57, 67, 77, 78, 83, 86, 87 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        497,458           17,896           15,012         2,884            0
+  2      1,196,368           36,576           28,536         8,040            0
+  3      1,595,480           54,248           42,768        11,480            0
+  4      2,116,103          134,392           87,720        46,672            0
+  5      2,798,810          112,920           74,604        38,316            0
+  6      3,198,683           83,280           58,404        24,876            0
+  7      3,764,560          170,104          102,852        67,252            0
+  8      4,268,286          175,416          106,896        68,520            0
+  9      5,025,448          108,880           71,220        37,660            0
+65.41% (71,220B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.31% (38,448B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->35.31% (38,448B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->35.31% (38,448B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->35.31% (38,448B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->22.08% (24,036B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->22.08% (24,036B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->03.95% (4,296B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.61% (3,936B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->03.61% (3,936B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.33% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.92% (4,272B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.92% (4,272B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.15% (168B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      5,461,840          123,728           82,464        41,264            0
+ 11      6,139,209          144,424           99,288        45,136            0
+ 12      6,747,451          166,304          113,820        52,484            0
+ 13      7,106,593          171,184          117,672        53,512            0
+ 14      7,881,679          194,120          129,588        64,532            0
+ 15      8,509,721          208,008          138,588        69,420            0
+ 16      9,174,689          205,976          137,328        68,648            0
+ 17      9,533,642          217,608          144,720        72,888            0
+ 18     10,071,784          231,944          157,344        74,600            0
+ 19     10,449,846          280,704          187,200        93,504            0
+66.69% (187,200B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->37.78% (106,056B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->37.78% (106,056B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->37.78% (106,056B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->37.78% (106,056B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->15.16% (42,552B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->15.16% (42,552B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->09.50% (26,664B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->09.23% (25,896B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->09.23% (25,896B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.27% (768B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.20% (11,784B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.20% (11,784B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.05% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 20     11,029,459          255,816          173,604        82,212            0
+ 21     11,539,760          328,840          214,032       114,808            0
+65.09% (214,032B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.57% (110,376B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->33.57% (110,376B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->33.57% (110,376B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->33.57% (110,376B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->16.03% (52,704B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->16.03% (52,704B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->11.72% (38,544B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->11.48% (37,752B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->11.48% (37,752B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.24% (792B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.73% (12,264B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.73% (12,264B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.04% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     11,876,523          378,520          241,920       136,600            0
+63.91% (241,920B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.22% (110,592B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->29.22% (110,592B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->29.22% (110,592B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->29.22% (110,592B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->16.41% (62,112B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->16.41% (62,112B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->15.00% (56,784B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->14.79% (55,992B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->14.79% (55,992B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.21% (792B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.25% (12,288B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.25% (12,288B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.04% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 23     12,456,294          288,272          190,188        98,084            0
+ 24     13,035,726          345,776          220,608       125,168            0
+ 25     13,325,548          326,440          210,144       116,296            0
+64.37% (210,144B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->34.67% (113,184B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->34.67% (113,184B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->34.67% (113,184B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->34.67% (113,184B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->17.88% (58,368B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->17.88% (58,368B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->07.93% (25,872B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->07.68% (25,056B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->07.68% (25,056B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.25% (816B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.85% (12,576B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.85% (12,576B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.04% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 26     13,904,941          334,824          213,024       121,800            0
+ 27     14,629,632          318,496          205,884       112,612            0
+ 28     15,064,689          328,744          212,400       116,344            0
+ 29     15,789,223          336,992          217,752       119,240            0
+ 30     16,513,740          357,296          232,944       124,352            0
+ 31     17,041,263          437,936          278,484       159,452            0
+63.59% (278,484B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->32.26% (141,264B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->32.26% (141,264B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->32.26% (141,264B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->32.26% (141,264B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->17.37% (76,068B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->17.37% (76,068B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->10.34% (45,288B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->10.10% (44,232B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->10.10% (44,232B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.24% (1,056B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.58% (15,696B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.58% (15,696B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.04% (168B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 32     17,620,738          400,240          253,764       146,476            0
+ 33     18,237,457          421,832          265,284       156,548            0
+ 34     18,733,852          409,232          258,600       150,632            0
+ 35     19,207,729          412,432          260,844       151,588            0
+ 36     19,681,507          441,608          281,088       160,520            0
+ 37     20,155,433          449,520          291,144       158,376            0
+ 38     20,629,373          457,600          297,396       160,204            0
+ 39     21,444,033          483,568          317,568       166,000            0
+65.67% (317,568B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->39.80% (192,456B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->39.80% (192,456B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->39.80% (192,456B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->39.80% (192,456B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->16.86% (81,528B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->16.86% (81,528B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->04.56% (22,032B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.25% (20,568B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->04.25% (20,568B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.30% (1,464B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.42% (21,384B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.42% (21,384B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.03% (168B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 40     22,033,799          566,792          365,268       201,524            0
+ 41     22,816,565          681,256          429,036       252,220            0
+62.98% (429,036B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->28.63% (195,048B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->28.63% (195,048B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->28.63% (195,048B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->28.63% (195,048B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->17.42% (118,644B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->17.42% (118,644B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->13.73% (93,528B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->13.52% (92,088B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->13.52% (92,088B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.21% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.18% (21,672B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.18% (21,672B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 42     23,535,587          777,696          482,864       294,832            0
+ 43     24,045,767          842,360          518,348       324,012            0
+61.54% (518,348B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->23.21% (195,480B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->23.21% (195,480B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->23.21% (195,480B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->23.21% (195,480B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->17.90% (150,744B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->17.72% (149,304B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->17.72% (149,304B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.17% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.83% (150,228B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->17.83% (150,228B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->02.58% (21,720B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->02.58% (21,720B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 44     24,448,994          883,976          540,848       343,128            0
+61.18% (540,848B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->22.11% (195,480B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->22.11% (195,480B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->22.11% (195,480B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->22.11% (195,480B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->18.61% (164,544B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->18.45% (163,104B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->18.45% (163,104B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.16% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.98% (158,928B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->17.98% (158,928B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->02.46% (21,720B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->02.46% (21,720B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 45     25,159,855          779,776          479,804       299,972            0
+ 46     25,870,824          676,792          419,900       256,892            0
+ 47     26,344,596          604,864          378,860       226,004            0
+ 48     26,818,517          599,880          377,360       222,520            0
+62.91% (377,360B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.13% (198,720B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->33.13% (198,720B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->33.13% (198,720B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->33.13% (198,720B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->22.39% (134,304B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->22.39% (134,304B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->03.68% (22,080B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.68% (22,080B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->03.68% (22,080B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.44% (20,640B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->03.44% (20,640B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.24% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.03% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 49     27,292,598          643,712          399,428       244,284            0
+ 50     27,582,443          682,472          416,348       266,124            0
+ 51     27,872,362          731,712          438,212       293,500            0
+ 52     28,162,208          742,192          441,692       300,500            0
+ 53     28,452,141          690,952          416,072       274,880            0
+ 54     28,745,208          643,104          394,076       249,028            0
+ 55     29,035,109          661,760          403,664       258,096            0
+ 56     29,325,109          675,808          409,340       266,468            0
+ 57     29,615,144          692,888          416,912       275,976            0
+60.17% (416,912B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->30.05% (208,224B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->30.05% (208,224B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->30.05% (208,224B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->30.05% (208,224B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->22.22% (153,936B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->22.22% (153,936B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->04.54% (31,440B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.32% (29,952B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->04.32% (29,952B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.21% (1,488B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.34% (23,136B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.34% (23,136B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.03% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 58     29,905,051          677,120          409,124       267,996            0
+ 59     30,194,956          711,000          426,848       284,152            0
+ 60     30,484,831          768,312          452,756       315,556            0
+ 61     30,774,851          793,648          466,400       327,248            0
+ 62     31,064,764          746,368          442,652       303,716            0
+ 63     31,363,884          710,528          423,548       286,980            0
+ 64     31,653,993          726,112          436,340       289,772            0
+ 65     31,943,978          737,536          442,688       294,848            0
+ 66     32,233,926          735,392          442,448       292,944            0
+ 67     32,523,853          747,944          449,048       298,896            0
+60.04% (449,048B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.02% (231,984B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->31.02% (231,984B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->31.02% (231,984B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->31.02% (231,984B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->21.84% (163,368B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->21.84% (163,368B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->03.71% (27,744B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.49% (26,136B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->03.49% (26,136B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.21% (1,608B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.45% (25,776B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.45% (25,776B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 68     32,813,778          757,760          456,308       301,452            0
+ 69     33,103,773          754,720          456,572       298,148            0
+ 70     33,393,702          766,104          464,744       301,360            0
+ 71     33,683,625          775,944          473,204       302,740            0
+ 72     33,973,451          791,312          486,176       305,136            0
+ 73     34,263,287          805,160          497,780       307,380            0
+ 74     34,553,132          820,272          510,224       310,048            0
+ 75     34,843,117          832,736          520,616       312,120            0
+ 76     35,133,118          841,808          527,780       314,028            0
+ 77     35,423,104          884,608          550,172       334,436            0
+62.19% (550,172B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.92% (300,024B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->33.92% (300,024B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->33.92% (300,024B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->33.92% (300,024B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->19.27% (170,460B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->19.27% (170,460B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->05.22% (46,152B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.99% (44,112B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->04.99% (44,112B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.23% (2,040B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.77% (33,336B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.77% (33,336B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (200B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 78     35,496,812          896,768          557,012       339,756            0
+62.11% (557,012B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.46% (300,024B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->33.46% (300,024B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->33.46% (300,024B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->33.46% (300,024B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->19.26% (172,740B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->19.26% (172,740B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->05.65% (50,712B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->05.43% (48,672B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->05.43% (48,672B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.23% (2,040B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.72% (33,336B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.72% (33,336B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (200B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 79     35,786,912          860,360          536,516       323,844            0
+ 80     36,076,978          873,872          547,904       325,968            0
+ 81     36,366,825          884,344          556,832       327,512            0
+ 82     36,656,756          895,720          566,636       329,084            0
+ 83     36,720,086          908,608          573,356       335,252            0
+63.10% (573,356B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.85% (325,728B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->35.85% (325,728B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->35.85% (325,728B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->35.85% (325,728B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->18.75% (170,364B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->18.75% (170,364B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->04.50% (40,872B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.18% (38,016B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->04.18% (38,016B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.31% (2,856B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.98% (36,192B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.98% (36,192B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (200B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 84     37,009,985          904,008          573,488       330,520            0
+ 85     37,299,924          916,040          583,496       332,544            0
+ 86     37,361,882          925,976          589,172       336,804            0
+63.63% (589,172B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->36.69% (339,768B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->36.69% (339,768B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->36.69% (339,768B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->36.69% (339,768B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->18.39% (170,268B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->18.39% (170,268B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->04.45% (41,184B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.13% (38,232B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->04.13% (38,232B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.32% (2,952B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.08% (37,752B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.08% (37,752B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (200B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 87     37,557,892          950,824          603,056       347,768            0
+63.42% (603,056B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.76% (339,984B) 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->35.76% (339,984B) 0x4018F1: cdsl_dll_init (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   ->35.76% (339,984B) 0x40154C: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|     ->35.76% (339,984B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|       
+->18.41% (175,008B) 0x401430: get_next_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->18.41% (175,008B) 0x4012ED: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->05.27% (50,112B) 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->04.96% (47,184B) 0x401601: insert_packet (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| | ->04.96% (47,184B) 0x40131B: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| |   
+| ->00.31% (2,928B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.97% (37,776B) 0x401513: find_node (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+| ->03.97% (37,776B) 0x401304: main (in /home/hdron/Documents/OrfeasDir/uni/9th_sem/embedded/Embedded-Systems-Ntua23/2on_lad/DDTR/DRR/D_binaries/drr_dyn_arr_dll)
+|   
+->00.02% (176B) in 1+ places, all below ms_print's threshold (01.00%)
+

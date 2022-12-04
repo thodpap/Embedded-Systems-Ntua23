@@ -14,7 +14,7 @@ for i in names:
 
         sub.run(f"touch /mem_footprint_results/\"mem_footprint_log_{i}_{j}.txt", shell=True, stdout=sub.PIPE).stdout.decode('utf-8')
 
-        command = f"valgrind --tool=massif ./D_binaries/drr_{i}_{j}"
+        command = f"valgrind --tool=massif ./binaries/drr_{i}_{j}"
 
         logger.info(sub.run(command, shell=True, stdout=sub.PIPE).stdout.decode('utf-8'))
 

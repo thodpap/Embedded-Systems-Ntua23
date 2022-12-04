@@ -1,11 +1,11 @@
 #include <stdio.h>
-#if defined(SLL_CL) || defined(SLL_PK)
+#if defined(SLL_CL)
 #include "../synch_implementations/cdsl_queue.h"
 #endif
-#if defined(DLL_CL) || defined(DLL_PK)
+#if defined(DLL_CL)
 #include "../synch_implementations/cdsl_deque.h"
 #endif
-#if defined(DYN_ARR_CL) || defined(DYN_ARR_PK)
+#if defined(DYN_ARR_CL)
 #include "../synch_implementations/cdsl_dyn_array.h"
 #endif
 
@@ -28,11 +28,11 @@ struct _QITEM
 };
 typedef struct _QITEM QITEM;
 
-QITEM *qHead = NULL;
+// QITEM *qHead = NULL;
 
-#if defined(SLL_PK)
+#if defined(SLL_CL)
 	cdsl_sll *qHead;
-#elif defined(DLL_PK)
+#elif defined(DLL_CL)
 	cdsl_dll *qHead;
 #else
 	cdsl_dyn_array *qHead;
@@ -49,9 +49,9 @@ int i, iCost, iDist;
 // Initializes qHead
 void init(){
 
-    #if defined (SLL_PK)
+    #if defined (SLL_CL)
       qHead = cdsl_sll_init();
-    #elif defined (DLL_PK)
+    #elif defined (DLL_CL)
       qHead = cdsl_dll_init();
     #else 
       qHead = cdsl_dyn_array_init();
@@ -73,27 +73,15 @@ void print_path (NODE *rgnNodes, int chNode)
 void enqueue (int iNode, int iDist, int iPrev)
 {
   QITEM *qNew = (QITEM *) malloc(sizeof(QITEM));
-  QITEM *qLast = qHead;
-  
-  if (!qNew) 
-    {
-      fprintf(stderr, "Out of memory.\n");
-      exit(1);
-    }
+  // QITEM *qLast = qHead;
+
   qNew->iNode = iNode;
   qNew->iDist = iDist;
   qNew->iPrev = iPrev;
   qNew->qNext = NULL;
-  
-  if (!qLast) 
-    {
-      qHead = qNew;
-    }
-  else
-    {
-      while (qLast->qNext) qLast = qLast->qNext;
-      qLast->qNext = qNew;
-    }
+
+  qHead->enqueue(0, qHead, (void *)qNew);
+
   g_qCount++;
 
 }
@@ -101,16 +89,29 @@ void enqueue (int iNode, int iDist, int iPrev)
 
 void dequeue (int *piNode, int *piDist, int *piPrev)
 {
-  QITEM *qKill = qHead;
+  // QITEM *qKill = qHead;
+
+  #if defined (SLL_CL)
+    iterator_cdsl_sll it;
+  #elif defined (DLL_CL)
+    iterator_cdsl_dll it;
+  #else 
+    iterator_cdsl_dyn_array it;
+  #endif
+
+  it = qHead->iter_begin(qHead);
+
+  QITEM *qKill = (QITEM *)qHead->iter_deref(qHead, it);
 
   if (qHead)
     {
 	
-      *piNode = qHead->iNode;
-      *piDist = qHead->iDist;
-      *piPrev = qHead->iPrev;
-      qHead = qHead->qNext;
-      free(qKill);
+      *piNode = qKill->iNode;
+      *piDist = qKill->iDist;
+      *piPrev = qKill->iPrev;
+      // qHead = qKill->qNext;
+      // free(qKill);
+      qHead->dequeue(0, (qHead));
       g_qCount--;
     }
 }
@@ -123,9 +124,7 @@ int qcount (void)
 
 int dijkstra(int chStart, int chEnd) 
 {
-  
 
-  
   for (ch = 0; ch < NUM_NODES; ch++)
     {
       rgnNodes[ch].iDist = NONE;
@@ -170,12 +169,14 @@ int dijkstra(int chStart, int chEnd)
 
 int main(int argc, char *argv[]) {
   int i,j,k;
-  FILE *fp;
+  FILE *fp, *out;
   
   if (argc<2) {
     fprintf(stderr, "Usage: dijkstra <filename>\n");
     fprintf(stderr, "Only supports matrix size is #define'd.\n");
   }
+
+  init();
 
   /* open the adjacency matrix file */
   fp = fopen (argv[1],"r");
@@ -193,6 +194,7 @@ int main(int argc, char *argv[]) {
   for (i=0,j=NUM_NODES/2;i<20;i++,j++) {
 			j=j%NUM_NODES;
       dijkstra(i,j);
+
   }
   exit(0);
   

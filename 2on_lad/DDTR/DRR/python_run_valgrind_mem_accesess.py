@@ -14,7 +14,7 @@ for i in names:
 
         sub.run(f"touch /mem_accesses_results/\"mem_accesses_log_{i}_{j}.txt", shell=True, stdout=sub.PIPE).stdout.decode('utf-8')
 
-        command = f"valgrind --log-file=./mem_accesses_results/\"mem_accesses_log_{i}_{j}.txt\" --tool=lackey --trace-mem=yes ./D_binaries/drr_{i}_{j}"
+        command = f"valgrind --log-file=./mem_accesses_results/\"mem_accesses_log_{i}_{j}.txt\" --tool=lackey --trace-mem=yes ./binaries/drr_{i}_{j}"
 
         logger.info(sub.run(command, shell=True, stdout=sub.PIPE).stdout.decode('utf-8'))
 

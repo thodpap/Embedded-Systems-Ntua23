@@ -59,13 +59,13 @@ void init(){
 
 }
 
-void print_path (NODE *rgnNodes, int chNode)
+void print_path (NODE *rgnNodes, int chNode, FILE* f)
 {
   if (rgnNodes[chNode].iPrev != NONE)
     {
-      print_path(rgnNodes, rgnNodes[chNode].iPrev);
+      print_path(rgnNodes, rgnNodes[chNode].iPrev, f);
     }
-  printf (" %d", chNode);
+  fprintf (f, "%d ", chNode);
   fflush(stdout);
 }
 
@@ -122,8 +122,10 @@ int qcount (void)
   return(g_qCount);
 }
 
-int dijkstra(int chStart, int chEnd) 
+int dijkstra(int chStart, int chEnd, FILE* f) 
 {
+
+  printf("In dijkstra!\n");
 
   for (ch = 0; ch < NUM_NODES; ch++)
     {
@@ -162,14 +164,16 @@ int dijkstra(int chStart, int chEnd)
       
       printf("Shortest path is %d in cost. ", rgnNodes[chEnd].iDist);
       printf("Path is: ");
-      print_path(rgnNodes, chEnd);
-      printf("\n");
+      print_path(rgnNodes, chEnd, f);
+      fprintf(f, "\n");
     }
 }
 
 int main(int argc, char *argv[]) {
   int i,j,k;
   FILE *fp, *out;
+
+  printf("files read!\n");
   
   if (argc<2) {
     fprintf(stderr, "Usage: dijkstra <filename>\n");
@@ -178,8 +182,13 @@ int main(int argc, char *argv[]) {
 
   init();
 
+  printf("files read!\n");
+
   /* open the adjacency matrix file */
   fp = fopen (argv[1],"r");
+  out = fopen(argv[2], "r");
+
+  printf("files read!\n");
 
   /* make a fully connected matrix */
   for (i=0;i<NUM_NODES;i++) {
@@ -193,8 +202,7 @@ int main(int argc, char *argv[]) {
   /* finds 10 shortest paths between nodes */
   for (i=0,j=NUM_NODES/2;i<20;i++,j++) {
 			j=j%NUM_NODES;
-      dijkstra(i,j);
-
+      dijkstra(i,j, out);
   }
   exit(0);
   

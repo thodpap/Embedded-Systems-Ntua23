@@ -1,5 +1,5 @@
 
-all: ./binaries/dijkstra_dynamic_sll ./binaries/dijkstra_dynamic_dll ./binaries/dijkstra_dynamic_dyn_arr 
+all: ./binaries/dijkstra_dynamic_sll ./binaries/dijkstra_dynamic_dll ./binaries/dijkstra_dynamic_dyn_arr ./binaries/dijkstra
 
 # EXECUTABLES
 ./binaries/dijkstra_dynamic_sll: dijkstra_dynamic.c
@@ -10,6 +10,9 @@ all: ./binaries/dijkstra_dynamic_sll ./binaries/dijkstra_dynamic_dll ./binaries/
 
 ./binaries/dijkstra_dynamic_dyn_arr: dijkstra_dynamic.c
 		gcc dijkstra_dynamic.c -o ./binaries/dijkstra_dynamic_dyn_arr -pthread -DDYN_ARR_CL -lcdsl -L./../synch_implementations -I./../synch_implementations -no-pie
+
+./binaries/dijkstra: dijkstra.c
+		gcc dijkstra.c -o ./binaries/dijkstra
 
 # CLEANS
 clean:

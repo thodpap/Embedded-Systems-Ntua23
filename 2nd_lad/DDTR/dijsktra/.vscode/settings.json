@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "cdsl_deque.h": "c"
+        "cdsl_deque.h": "c",
+        "cdsl_dyn_array.h": "c",
+        "cdsl_queue.h": "c"
     }
 }

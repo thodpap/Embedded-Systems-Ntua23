@@ -1,1 +1,1 @@
-memory footprint: 597.6
+memory footprint: 363.6

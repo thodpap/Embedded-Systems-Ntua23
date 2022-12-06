@@ -142,7 +142,7 @@ int dijkstra(int chStart, int chEnd)
 
 int main(int argc, char *argv[]) {
   int i,j,k;
-  FILE *fp, *out;
+  FILE *fp;
   
   if (argc<2) {
     fprintf(stderr, "Usage: dijkstra <filename>\n");
@@ -169,7 +169,6 @@ int main(int argc, char *argv[]) {
 
   }
   
-  fclose(out);
   fclose(fp);
   exit(0);
 }

@@ -1,6 +1,7 @@
 import subprocess as sub
 
 files = sub.run("ls massif.out*", shell=True, stdout=sub.PIPE).stdout.decode('utf-8').split("\n")
+print(files)
 
 files = files[:len(files) - 1]
 
@@ -15,7 +16,7 @@ for file in files:
             name = name.split("/")[2]
             print(name)
             f.close()
-
+            print(file)
             # sub.run(f"touch ./mem_footprint_results/mem_footprint_log_{name}.txt", shell=True)
             sub.run(f"ms_print {file} > ./mem_footprint_results/mem_footprint_log_{name}.txt", shell=True)
             sub.run(f"mv {file} ./mem_footprint_results/", shell=True)

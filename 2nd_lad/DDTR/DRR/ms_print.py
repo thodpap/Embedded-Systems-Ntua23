@@ -16,8 +16,8 @@ for file in files:
             print(name)
             f.close()
 
-            sub.run(f"touch ./mem_footprint_results/mem_footprint_log_{name}.txt", shell=True)
+            # sub.run(f"touch ./mem_footprint_results/mem_footprint_log_{name}.txt", shell=True)
             sub.run(f"ms_print {file} > ./mem_footprint_results/mem_footprint_log_{name}.txt", shell=True)
-            sub.run(f"mv massif.out* ./mem_footprint_results/", shell=True)
+            sub.run(f"mv {file} ./mem_footprint_results/", shell=True)
 
             break

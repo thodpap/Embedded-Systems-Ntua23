@@ -19,4 +19,4 @@ clean:
 	rm *.o
 
 clean_all:
-	rm *.o binaries/dijkstra_dynamic_sll binaries/dijkstra_dynamic_dll binaries/dijkstra_dynamic_dyn_arr
+	rm *.o binaries/dijkstra_dynamic_sll binaries/dijkstra_dynamic_dll binaries/dijkstra_dynamic_dyn_arr binaries/dijkstra

@@ -37,8 +37,8 @@ void print_path (NODE *rgnNodes, int chNode)
     {
       print_path(rgnNodes, rgnNodes[chNode].iPrev);
     }
-  printf (" %d", chNode);
-  fflush(stdout);
+  printf ("%d ", chNode);
+  // fflush(stdout);
 }
 
 
@@ -142,7 +142,7 @@ int dijkstra(int chStart, int chEnd)
 
 int main(int argc, char *argv[]) {
   int i,j,k;
-  FILE *fp;
+  FILE *fp, *out;
   
   if (argc<2) {
     fprintf(stderr, "Usage: dijkstra <filename>\n");
@@ -151,6 +151,7 @@ int main(int argc, char *argv[]) {
 
   /* open the adjacency matrix file */
   fp = fopen (argv[1],"r");
+  // out = fopen(argv[2], "w");
 
   /* make a fully connected matrix */
   for (i=0;i<NUM_NODES;i++) {
@@ -165,8 +166,10 @@ int main(int argc, char *argv[]) {
   for (i=0,j=NUM_NODES/2;i<20;i++,j++) {
 			j=j%NUM_NODES;
       dijkstra(i,j);
-  }
-  exit(0);
-  
 
+  }
+  
+  fclose(out);
+  fclose(fp);
+  exit(0);
 }

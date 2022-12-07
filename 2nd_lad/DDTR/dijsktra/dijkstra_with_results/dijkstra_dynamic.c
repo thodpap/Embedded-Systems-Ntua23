@@ -34,7 +34,7 @@ typedef struct _QITEM QITEM;
 	cdsl_sll *qHead;
 #elif defined(DLL_CL)
 	cdsl_dll *qHead;
-#else
+#elif defined(DYN_ARR_CL)
 	cdsl_dyn_array *qHead;
 #endif
              
@@ -59,13 +59,13 @@ void init(){
 
 }
 
-void print_path (NODE *rgnNodes, int chNode, FILE* f)
+void print_path (NODE *rgnNodes, int chNode)
 {
   if (rgnNodes[chNode].iPrev != NONE)
     {
-      print_path(rgnNodes, rgnNodes[chNode].iPrev, f);
+      print_path(rgnNodes, rgnNodes[chNode].iPrev);
     }
-  fprintf (f, "%d ", chNode);
+  printf ("%d ", chNode);
   // fflush(stdout);
 }
 
@@ -95,7 +95,7 @@ void dequeue (int *piNode, int *piDist, int *piPrev)
     iterator_cdsl_sll it;
   #elif defined (DLL_CL)
     iterator_cdsl_dll it;
-  #else 
+  #elif defined(DYN_ARR_CL)
     iterator_cdsl_dyn_array it;
   #endif
 
@@ -122,7 +122,7 @@ int qcount (void)
   return(g_qCount);
 }
 
-int dijkstra(int chStart, int chEnd, FILE* f) 
+int dijkstra(int chStart, int chEnd) 
 {
 
   printf("In dijkstra!\n");
@@ -163,9 +163,9 @@ int dijkstra(int chStart, int chEnd, FILE* f)
 	}
       
       printf("Shortest path is %d in cost. ", rgnNodes[chEnd].iDist);
-      fprintf(f, "Path is: ");
-      print_path(rgnNodes, chEnd, f);
-      fprintf(f, "\n");
+      printf("Path is: ");
+      print_path(rgnNodes, chEnd);
+      printf("\n");
     }
 }
 
@@ -186,7 +186,7 @@ int main(int argc, char *argv[]) {
 
   /* open the adjacency matrix file */
   fp = fopen (argv[1],"r");
-  out = fopen(argv[2], "w");
+  // out = fopen(argv[2], "w");
 
   printf("files read!\n");
 
@@ -202,7 +202,7 @@ int main(int argc, char *argv[]) {
   /* finds 10 shortest paths between nodes */
   for (i=0,j=NUM_NODES/2;i<20;i++,j++) {
 			j=j%NUM_NODES;
-      dijkstra(i,j, out);
+      dijkstra(i,j);
   }
 
 

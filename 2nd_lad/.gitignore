@@ -1,3 +1,4 @@
 *.zip
 valgrind-3.17.0/
 *.bz2
+*/massif.out.*

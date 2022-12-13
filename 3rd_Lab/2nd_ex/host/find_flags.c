@@ -70,8 +70,8 @@ int main(int argc, char *argv[]){
 
     printf("tty.c_oflag = %d\n", tty.c_oflag);
     
-    tty.c_cc[VTIME] = 10;    // Wait for up to 1s (10 deciseconds), returning as soon as any data is received.
-    tty.c_cc[VMIN] = 0;
+    tty.c_cc[VTIME] = 0;    // Wait for up to 1s (10 deciseconds), returning as soon as any data is received.
+    tty.c_cc[VMIN] = 1;
 
     // printf("tty.c_cc = %d\n", tty.c_cc);printf("tty.c_lflag = %d\n", tty.c_lflag);
     printf("tty_input_output speed = %d\n", 0000015);

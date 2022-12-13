@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <string.h>
 
 // Linux headers
 #include <fcntl.h>   // Contains file controls like O_RDWR
@@ -12,52 +15,74 @@
 #define ACTUAL_BUFF_SIZE 67
 #define PLUS_SLASH_N_AND_ONE_MORE 66
 
-char input[ACTUAL_BUFF_SIZE] = "";
-char output[2] = "";
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
+
+    char input[ACTUAL_BUFF_SIZE] = "";
+    char output[10] = "";
+
+    // tty file descriptor
+    int tty_fd;
+
+    // Create new termios struct
+    struct termios tty;
 
     // Check for input arguments
     if (argc != 2)
     {
 
-        fprintf(stderr, "Invalid number of arguments, please provide only the serial port path!");
+        fprintf(stderr, "Invalid number of arguments, please provide only the serial port path!\n");
         exit(2);
     }
 
-    printf("Please give a string to send to host:");
+    printf("Please give a string to send to host:\n");
 
-    int rcnt = read(0, input, PLUS_SLASH_N_AND_ONE_MORE);
-    if (rcnt < 0)
-    {
-        perror("read");
-        exit(1);
-    }
+    // ssize_t rcnt = read(0, input, PLUS_SLASH_N_AND_ONE_MORE);
 
-    if (rcnt == 66)
-    {
-        fprintf(stderr, "Host: string is more than 64 bytes!\n");
-        fflush(0);
-        exit(1);
-    }
+    // if (rcnt < 0)
+    // {
+    //     perror("read");
+    //     exit(1);
+    // }
+
+    // if (rcnt == 66)
+    // {
+    //     fprintf(stderr, "Host: string is more than 64 bytes!\n");
+    //     fflush(0);
+    //     exit(1);
+    // }
 
     // We prefere the previous way of reading in order to get \n without filling the input array with spaces as it is shown below
 
-    // fscanf(stdin, "%[^\n]64s", input);
-    // input[ACTUAL_BUFF_SIZE-1] = '\n';
+    // fflush(0);
 
-    // if (input[64] != 0){
+    fscanf(stdin, " %[^\n]s", input);
 
-    //     fprintf(stderr, "Maximum number of characters is 64.\n");
-    //     exit(3);
+    // printf("input = %s\n", input);
 
-    // }
+    if (input[64] != '\0'){
+
+        fprintf(stderr, "Maximum number of characters is 64.\n");
+        exit(3);
+
+    }
+
+    int i;
+    for(i = 0; i < ACTUAL_BUFF_SIZE; i++){
+        if(input[i] == '\0') {
+            input[i] = '\n';
+            // printf("%d\n", i);
+            break;
+        }
+    }
+
+    // printf("input = %s\n", input);
 
     // Open input tty
-    int tty_fd;
 
     tty_fd = open(argv[1], O_RDWR | O_NOCTTY);
+
+    // fflush(tty_fd);
 
     if (tty_fd == -1)
     {
@@ -65,9 +90,6 @@ int main(int argc, char *argv[])
         fprintf(stderr, "Cannot open input tty.\n");
         exit(4);
     }
-
-    // Create new termios struct
-    struct termios tty;
 
     // Read in existing settings, and handle any error
     if (tcgetattr(tty_fd, &tty) != 0)
@@ -118,17 +140,21 @@ int main(int argc, char *argv[])
     tcflush(tty_fd, TCIOFLUSH); /* Flush tty buffer */
 
     // Read user input
-    fscanf(stdin, "%s", input);
+    // fscanf(stdin, "%s", input);
 
     write(tty_fd, input, ACTUAL_BUFF_SIZE);
 
-    read(tty_fd, output, ACTUAL_BUFF_SIZE);
+    // fscanf(tty_fd, "%c %d", output[0], output[1]);
 
-    char most_frequent_character = output[0];
-    int times = output[1] - 48;
+    read(tty_fd, output, 10);
+
+    printf("%d\n", output[0]);
+
+    char most_frequent_character = output[2];
+    char times = output[0] - '0';
 
     if (times != 0)
-        printf("The most frequent character is\n %c \nand it appeared %d times.\n", output[0], times);
+        printf("The most frequent character is\n %c \nand it appeared %d times.\n", most_frequent_character, times);
 
     else
         printf("No characters were given\n");

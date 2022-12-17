@@ -8,7 +8,8 @@ main:
 open: @ opens the tty
     ldr r0, =path_tty @ load path file to open
     mov r7, #5 @ move the open syscall number to r7
-    ldr r1, =#258  @ O_RDWR = 0400 = 0x100 = 256, O_NOCTTY = 02 = 0x2 = 2
+    ldr r1, =#258  @ 
+    O_RDWR = 0400 = 0x100 = 256, O_NOCTTY = 02 = 0x2 = 2
     svc 0
     ldr r3, =tty_fd
     str r0, [r3] @ store fd to tty_fd address
@@ -27,7 +28,7 @@ read:
     svc #0
 
 done_read:
-    ldr r5, =string @ current address to string
+    ldr r5, =string @ current address of string
     mov r8, #1 @ for address increasing
     ldr r9, =hash_set @ hash set
 

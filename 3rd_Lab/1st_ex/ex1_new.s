@@ -11,7 +11,7 @@ main:
 
 loop:
     mov r4, #0 @ r4 is the len counter
-    mov r10, #0 @ global counter
+    mov r10, #0 @ global counter that count the total number of bytes
     mov r9, #1 @ for LSL
     mov r1, #0
     ldr r0, =string_input @ prints Input a string of up to 32 chars long:
@@ -34,7 +34,7 @@ read_input: @reads the input, if single q or Q exits, if enter (new line) contin
     beq exit
     cmp r1, #113 @ q
     beq exit
-    SKIP:
+SKIP:
     cmp r1, #10 @ enter
     beq result_is
     str r1, [r6] @ stores the input characters (max 32) to input_array

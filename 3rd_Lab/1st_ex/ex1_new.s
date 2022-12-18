@@ -28,17 +28,19 @@ read_input: @reads the input, if single q or Q exits, if enter (new line) contin
     add r10, r10, r9, lsl #2
     cmp r10, #128
     movge r10, #128
-    cmp r10, #4
-    bne SKIP
+    cmp r1, #10 @ enter
+    beq check_q
+    str r1, [r6] @ stores the input characters (max 32) to input_array
+    bal read_input
+
+check_q:
+    cmp r10, #8
+    bgt result_is
+    ldr r1, [r5]
     cmp r1, #81 @ Q
     beq exit
     cmp r1, #113 @ q
     beq exit
-SKIP:
-    cmp r1, #10 @ enter
-    beq result_is
-    str r1, [r6] @ stores the input characters (max 32) to input_array
-    bal read_input
 
 result_is: @prints "Result is:" and initiazlizes r4
     mov r1, #0

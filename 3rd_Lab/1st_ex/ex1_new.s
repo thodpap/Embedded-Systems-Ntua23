@@ -6,8 +6,8 @@
 
 main:
     push {ip,lr}
-    ldr r5, =input_array @ input array addres
-    ldr r7, =output_array @ output array addres
+    ldr r5, =input_array @ input array address
+    ldr r7, =output_array @ output array address
 
 loop:
     mov r4, #0 @ r4 is the len counter

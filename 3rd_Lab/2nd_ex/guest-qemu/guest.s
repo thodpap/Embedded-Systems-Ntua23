@@ -8,14 +8,13 @@ main:
 open: @ opens the tty
     ldr r0, =path_tty @ load path file to open
     mov r7, #5 @ move the open syscall number to r7
-    ldr r1, =#258  @ 
-    O_RDWR = 0400 = 0x100 = 256, O_NOCTTY = 02 = 0x2 = 2
+    ldr r1, =#258  @ O_RDWR = 0400 = 0x100 = 256, O_NOCTTY = 02 = 0x2 = 2
     svc 0
     ldr r3, =tty_fd
     str r0, [r3] @ store fd to tty_fd address
 
 config: @ r0 = tty_fd
-    mov r1, #0 @ FLAG FOT TCSETATTRTCSANOW
+    mov r1, #0 @ FLAG FOR TCSETATTRTCSANOW
     ldr r2, =options
     bl tcsetattr
 
